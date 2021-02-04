@@ -1,0 +1,28 @@
+site_name: 'NeLS Documentation'
+use_directory_urls: false
+repo_name: elixir-no-nels/nels-docs
+repo_url: 'https://github.com/elixir-no-nels/nels-docs'
+site_description: Documentation for the Norwegian e-Infrastructure for Life Sciences - NeLS, operated by ELIXIR Norway
+theme: readthedocs
+copyright: This documentation under <a href="https://github.com/elixir-no-nels/nels-docs/blob/main/LICENSE">Creative Commons Attribution Share Alike 4.0 International</a> license
+
+markdown_extensions:
+  - admonition
+  - toc:
+        permalink: True  
+nav:
+ - Home: 'index.md'
+ - About:
+   - What is NeLS: 'about.html#what-is-nels'
+   - Terminology: 'about.html#terminology'
+   - Data Safety and Security: 'about.html#how-safe-and-secure-are-data-in-nels'
+   - How to obtain access to NeLS: 'about.html#how-safe-and-secure-are-data-in-nels'
+   - How to obtain a storage quota: 'about.html#how-to-obtain-a-storage-quota'
+ - User Documentation:
+   - Access: 'http://127.0.0.1:8000/user-doc.html#accessing-nels'
+   - Upload/Download: 'user-doc.html## Upload/Download data to/from NeLS'
+   - Exchange data with usegalaxy.no: 'http://127.0.0.1:8000/user-doc.html#exchange-data-with-usegalaxyno'
+   - Midterm data storage in NeLS/SBI: 'http://127.0.0.1:8000/user-doc.html#midterm-data-storage-in-nelssbi'
+   - Where to deposit data long term: 'http://127.0.0.1:8000/user-doc.html#where-to-deposit-data-long-term'
+ - Integrations:
+   - NeLS - SEEK integration: 'integrations.html#NeLS - SEEK integration'
