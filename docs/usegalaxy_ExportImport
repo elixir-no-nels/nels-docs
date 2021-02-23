@@ -1,0 +1,16 @@
+## How to export and import Galaxy histories to and from NeLS
+We have made a function in the NeLS Galaxy instances that can export a whole history including the data sets in that history as a single compressed file to NeLS. This file can be imported into another Galaxy instance, e.g. usegalaxy.no and the analysis work can continue. The advantage of this export is that all provenance data will be kept, meaning all commands, tool versions, database versions, etc that were used prior to the export.
+
+#### Exporting a history from NeLS Galaxy:
+NB! If you have several histories, you would need to repeat the steps below for each history you would like to export.
+
+<html>
+<div style="background-color: #f2f3f4">
+
+Galaxy is an open, web-based platform for accessible, reproducible, and transparent computational biomedical research. **usegalaxy.no** is a national Galaxy server for life science data hosted and supported by ELIXIR Norway. 
+
+You can access the **usegalaxy.no** at [https://usegalaxy.no/](https://usegalaxy.no/)
+
+**usegalaxy.no** is accessible to all Norwegian users and their collaborators - just like NeLS. Non-FEIDE users (eg. collaborators) can get access using a **NeLS idp** which can obtained by contacting the **ELIXIR Norway helpdesk**: <contact@bioinfo.no> 
+</div>
+</html>
