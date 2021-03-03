@@ -14,9 +14,7 @@ The [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.bioinfo.n
 * How safe and secure are data in NeLS?
 * How to obtain access to NeLS
 * How to obtain a storage quota
-
-
-
+* How to cite us
 
 
 ## User Documentation
@@ -27,6 +25,8 @@ The [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.bioinfo.n
 * Exchange data with usegalaxy.no
 * Midterm data storage in NeLS/SBI
 * Where to deposit data long term
+* [Import and export data in usegalaxy.no](./usegalaxy_ImportExport.md)
+* [Delete and permanent delete data in usegalaxy.no](./usegalaxy_DeleteData.md)
 
 ## Integrations
 

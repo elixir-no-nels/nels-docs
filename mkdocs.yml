@@ -25,5 +25,7 @@ nav:
    - Exchange data with usegalaxy.no: 'user-doc.html#exchange-data-with-usegalaxyno'
    - Midterm data storage in NeLS/SBI: 'user-doc.html#midterm-data-storage-in-nelssbi'
    - Where to deposit data long term: 'user-doc.html#where-to-deposit-data-long-term'
+   - Import and export data in usegalaxy.no : 'usegalaxy_ImportExport.md'
+   - Delete and permanent delete data in usegalaxy.no : 'usegalaxy_DeleteData.md'
  - Integrations:
    - NeLS - SEEK integration: 'integrations.html#NeLS - SEEK integration'
