@@ -5,23 +5,13 @@ Galaxy offer multiple ways to delete datasets and histories, and you will try tw
 1. Delete datasets or histories - This option temporary delete data (basically just hide the data)
 2. Permanently delete datasets or histories - This option permanently delete data from the disk
 
-
-
-
-
-
-
-
-
-
-
 !!! note
 
-     Since usegalaxy.no is not meant for storage we encourage you to move your data when your analysis is done.
-     
+     Since usegalaxy.no is not meant for storage we encourage you to move or permanently delete your data when your analysis is done.
+
 ## Delete datasets and complete histories
 
-I. Make sure your current history is the history you imported from NeLS previously (if you didn't rename it, it should be called something that starts with "**imported from archive: ....**"")
+Make sure your current history is the history you imported from NeLS previously (if you didn't rename it, it should be called something that starts with "**imported from archive: ....**"")
 
 II. Select the dataset(s) you want to delete (temporary) by pressing "**X**" next to the dataset in your "**History**" panel [1]. The dataset should disappear from you history, but you still access it [2]
 
