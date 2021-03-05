@@ -8,13 +8,13 @@ The [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.bioinfo.n
     This documentation is still under development
 
 ## About NeLS
-* [What is NeLS?](./What_is_NeLS.md)
+* [What is NeLS](./about.html#what-is-nels)
 * What can NeLS be used for?
 * Terminology
 * How safe and secure are data in NeLS?
-* [How to obtain access to NeLS](./How_to_obtain_access_to_NeLS.md)
+* How to obtain access to NeLS
 * How to obtain a storage quota
-* [How to cite us](How_to_cite_us.md)
+* [How to cite us](./about.html#how-to-cite-us)
 
 
 ## User Documentation
@@ -25,9 +25,10 @@ The [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.bioinfo.n
 * Exchange data with usegalaxy.no
 * Midterm data storage in NeLS/SBI
 * Where to deposit data long term
-* [Import and export data in usegalaxy.no](./usegalaxy_ImportExport.md)
-* [Delete and permanent delete data in usegalaxy.no](./usegalaxy_DeleteData.md)
-* [Import and export workflows in usegalaxy.no](Import_and_export_workflows_in_usegalaxy.no.md)
+* [Import and export data to and from NeLS](user-doc.html#import-and-export-galaxy-histories-to-and-from-nels)
+* [Delete and permanent delete data in usegalaxy.no](user-doc.html#delete-and-permanent-delete-data-in-usegalaxyno)
+* [Import and export workflows in usegalaxy.no](./user-doc.html#import-and-export-workflows-in-usegalaxyno)
+
 
 ## Integrations
 

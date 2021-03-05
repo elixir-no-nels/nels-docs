@@ -14,20 +14,21 @@ markdown_extensions:
 nav:
  - Home: 'index.md'
  - About:
-   - What is NeLS: 'What_is_NeLS.md'
+   - What is NeLS: 'about.html#what-is-nels'
    - Terminology: 'about.html#terminology'
    - Data Safety and Security: 'about.html#how-safe-and-secure-are-data-in-nels'
    - How to obtain access to NeLS: 'about.html#how-safe-and-secure-are-data-in-nels'
    - How to obtain a storage quota: 'about.html#how-to-obtain-a-storage-quota'
-   - How to cite us: 'How_to_cite_us.md'
+   - How to cite us: 'about.html#how-to-cite-us'
  - User Documentation:
    - Access: 'user-doc.html#accessing-nels'
    - Upload/Download: 'user-doc.html## Upload/Download data to/from NeLS'
    - Exchange data with usegalaxy.no: 'user-doc.html#exchange-data-with-usegalaxyno'
    - Midterm data storage in NeLS/SBI: 'user-doc.html#midterm-data-storage-in-nelssbi'
    - Where to deposit data long term: 'user-doc.html#where-to-deposit-data-long-term'
-   - Import and export data in usegalaxy.no: 'usegalaxy_ImportExport.md'
-   - Delete and permanent delete data in usegalaxy.no: 'usegalaxy_DeleteData.md'
-   - Import and export workflows in usegalaxy.no: 'Import_and_export_workflows_in_usegalaxy.no.md'
+   - Import and export data to and from NeLS: 'user-doc.html#import-and-export-galaxy-histories-to-and-from-nels'
+   - Delete and permanent delete data in usegalaxy.no: 'user-doc.html#delete-and-permanent-delete-data-in-usegalaxyno'
+   - Import and export workflows in usegalaxy.no: 'user-doc.html#import-and-export-workflows-in-usegalaxyno'
+   - Where: 'user-doc.html#Where'
  - Integrations:
    - NeLS - SEEK integration: 'integrations.html#NeLS - SEEK integration'
