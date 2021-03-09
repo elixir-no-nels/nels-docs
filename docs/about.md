@@ -1,11 +1,34 @@
 # About NeLS
-
-## What is NeLS
-NeLS is short for Norwegian e-Infrastructure for Life Sciences. [NeLS](https://nels.bioinfo.no/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
-
 ![](images/nels-logo-300.png)
+## What is NeLS
+The Norwegian e-Infrastructure for Life Sciences [(NeLS)](https://nels.bioinfo.no/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
+
+![](images/NeLS_architecture.png)
+
+### What can NeLS be used for?
+
+* Storage of Life science data
+* Sharing of data between project collaborators
+* Data analysis in usegalaxy.no
+* Data submission to public data repositories
+* If we include ELIXIR.NO - DM planning, etc
 
 ### Who can use NeLS?
+
+NeLS is accessible to all Norwegian researchers.
+
+## How to obtain access to NeLS
+
+All users with FEIDE login credentials can access NeLS. In addition, your University/institution need to allow their users to use FEIDE to connect to the NeLS Portal. If you don't have FEIDE login credential, you can apply for a NeLS idp
+
+!!! note
+
+     If you are in doubt that your University/institution has been connected to the NeLS Portal, please contact us at [contact@bioinfo.no](mailto:contact@bioinfo.no). We can support you in how to get your institution connected to our service.
+
+
+
+
+## How can I get a storage quota in NeLS
 
 We currently offer free storage of data up to 10TB. For larger projects, please contact us at [contact@bioinfo.no](mailto:contact@bioinfo.no).
 
@@ -21,13 +44,16 @@ The storage quota provided are available in the NeLS infrastructure for non-sens
 
      To access the NeLS portal, see [this documentation](./How_to_obtain_access_to_NeLS.md)
 
-## Terminology
-
-## How safe and secure are data in NeLS?
 
 ## How to obtain access to NeLS
 
-## How to obtain a storage quota
+
+
+
+
+## Terminology
+
+## How safe and secure are data in NeLS?
 
 ## How to cite us
 

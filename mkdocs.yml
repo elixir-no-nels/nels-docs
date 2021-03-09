@@ -15,10 +15,10 @@ nav:
  - Home: 'index.md'
  - About:
    - What is NeLS: 'about.html#what-is-nels'
+   - How to obtain access to NeLS: 'about.html#how-to-obtain-access-to-nels'
+   - How can I get a storage quota in NeLS?: 'about.html#how-can-i-get-a-storage-quota-in-nels'
    - Terminology: 'about.html#terminology'
    - Data Safety and Security: 'about.html#how-safe-and-secure-are-data-in-nels'
-   - How to obtain access to NeLS: 'about.html#how-safe-and-secure-are-data-in-nels'
-   - How to obtain a storage quota: 'about.html#how-to-obtain-a-storage-quota'
    - How to cite us: 'about.html#how-to-cite-us'
  - User Documentation:
    - Access: 'user-doc.html#accessing-nels'

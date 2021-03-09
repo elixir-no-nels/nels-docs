@@ -9,20 +9,21 @@ The [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.bioinfo.n
 
 ## About NeLS
 * [What is NeLS](./about.html#what-is-nels)
-* What can NeLS be used for?
+    * [What can NeLS be used for?](./about.html##what-can-nels-be-used-for)
+    * [Who can use NeLS?](./about.html#who-can-use-nels)
+* [How to obtain access to NeLS](./about.html#how-to-obtain-access-to-nels)
+* [How can I get a storage quota in NeLS?](./about.html#how-do-i-get-a-storage-quota-in-nels)
 * Terminology
 * How safe and secure are data in NeLS?
-* How to obtain access to NeLS
-* How to obtain a storage quota
 * [How to cite us](./about.html#how-to-cite-us)
 
 
 ## User Documentation
-* Accessing NeLS
-* Upload data to NeLS
-  * Upload/Download data using the Webinterface
+* Accessing NeLS @Kjersti
+* Upload data to NeLS @Joshua/Tina
+  * Upload/Download data using the Web interface
   * Upload/Download using ssh
-* Exchange data with usegalaxy.no
+* Exchange data with usegalaxy.no @Erik
 * Midterm data storage in NeLS/SBI
 * Where to deposit data long term
 * [Import and export data to and from NeLS](user-doc.html#import-and-export-galaxy-histories-to-and-from-nels)
