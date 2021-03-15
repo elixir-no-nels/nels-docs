@@ -1,9 +1,9 @@
-site_name: 'NeLS Documentation'
+site_name: 'ELIXIR Norway Documentation'
 use_directory_urls: false
 repo_name: GitHub
 repo_url: 'https://github.com/elixir-no-nels/nels-docs'
 repo_uri: blob/main/docs/
-site_description: Documentation for the Norwegian e-Infrastructure for Life Sciences - NeLS, operated by ELIXIR Norway
+site_description: Documentation for ELIXIR Norway and the Norwegian e-Infrastructure for Life Sciences - NeLS
 theme: readthedocs
 copyright: This documentation under <a href="https://github.com/elixir-no-nels/nels-docs/blob/main/LICENSE">Creative Commons Attribution Share Alike 4.0 International</a> license
 
@@ -14,17 +14,19 @@ markdown_extensions:
 nav:
  - Home: 'index.md'
  - About:
-   - What is NeLS: 'about.html#what-is-nels'
-   - How to obtain access to NeLS: 'about.html#how-to-obtain-access-to-nels'
-   - How can I get a storage quota in NeLS?: 'about.html#how-can-i-get-a-storage-quota-in-nels'
+   - What is ELIXIR Norway: './about.html#what-is-elixir-norway'
+   - What is NeLS and SBI: 'about.html#what-is-nels-and-sbi'
+   - Access to NeLS: 'about.html#access-to-nels'
+   - Access to SBI: 'about.html#access-to-sbi'
+   - Storage quota in SBI: 'about.html#storage-quota-in-sbi'
    - Terminology: 'about.html#terminology'
    - Data Safety and Security: 'about.html#how-safe-and-secure-are-data-in-nels'
    - How to cite us: 'about.html#how-to-cite-us'
+   - What is usegalaxy.no: 'about.html#what-is-usegalaxyno'
  - User Documentation:
-   - Access: 'user-doc.html#accessing-nels'
-   - Upload/Download: 'user-doc.html## Upload/Download data to/from NeLS'
-   - Exchange data with usegalaxy.no: 'user-doc.html#exchange-data-with-usegalaxyno'
-   - Midterm data storage in NeLS/SBI: 'user-doc.html#midterm-data-storage-in-nelssbi'
+   - Accessing NeLS: 'user-doc.html#accessing-nels'
+   - Transfer data to and from NeLS: 'user-doc.html#transfer-data-to-and-from-nels'
+   - Midterm data storage in NeLS/SBI: 'user-doc.html#midterm-data-storage-in-nels-and-sbi'
    - Where to deposit data long term: 'user-doc.html#where-to-deposit-data-long-term'
    - Import and export data to and from NeLS: 'user-doc.html#import-and-export-galaxy-histories-to-and-from-nels'
    - Delete and permanent delete data in usegalaxy.no: 'user-doc.html#delete-and-permanent-delete-data-in-usegalaxyno'
