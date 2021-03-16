@@ -69,10 +69,24 @@ The key is now ready for use via the command line or through SFTP Software.
 Joshua and Tina
 
 ### Upload/Download data using the Web interface
+For quick browsing and simple file access a user can log into NeLS at https://nels.bioinfo.no/ using either their FEiDE identity if they are a member of a Norewegian institution or a NeLS identity which can be created by members of the Elixir Helpdesk with access to the NelS admin tools.
 
-### Upload/Download using FileZilla
+This access option is used when data needs to be backed up from NeLS in SBI
 
-### Upload/Download using ssh
+### Upload/Download using SFTP tools
+Programs such as Filezilla and WinSCP can also be used to access data stored up on NeLS. Connections have to be properly set up inside the tools’ configurations options such as Filezilla’s Site Manager. As these methods require the SSH key, quick connect methods in these tools can not be used to establish a connection.
+
+### Upload/Download via the command line
+If the operating system you are using has a unix/linux based terminal then the NeLS server can be accessed via ssh and scp command depending on what is needed.
+
+Mac OS and Linux operating systems come with terminal access by default and Windows users can download an app such as Ubuntu for WIndows via the Microsoft Store to install a linux terminal.
+
+Access to NeLS via this method requires a SSH private key available from inside the NeLS webportal.
+
+The key as well as a user’s user name which is not the same as their FEiDE ID can be found in the Connection Details tab accessible from the top right of the NeLS webportal pages as shown below.
+![](images/NeLs_DataTransfer_CLI.png)
+
+	The host address, nelstor0.cbu.uib.no, is common for all users.
 
 ## Midterm data storage in NeLS and SBI
 NeLS is meant for storing and sharing active project data. This is typically data that are being analysed and shared with collaborators during a project. Data normally reside here for months/years.
