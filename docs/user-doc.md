@@ -68,16 +68,63 @@ The key is now ready for use via the command line or through SFTP Software.
 
 Joshua and Tina
 
-### Upload/Download data using the Web interface
+### Upload/Download data using the Web interface of the NeLS portal
+
 For quick browsing and simple file access a user can log into NeLS at https://nels.bioinfo.no/ using either their FEiDE identity if they are a member of a Norewegian institution or a NeLS identity which can be created by members of the Elixir Helpdesk with access to the NelS admin tools.
 
-This access option is used when data needs to be backed up from NeLS in SBI
+This access option is used when data needs to be backed up from NeLS to SBI, for details see section "Medterm data storage in NeLS and SBI".
 
-### Upload/Download using SFTP tools
-Programs such as Filezilla and WinSCP can also be used to access data stored up on NeLS. Connections have to be properly set up inside the tools’ configurations options such as Filezilla’s Site Manager. As these methods require the SSH key, quick connect methods in these tools can not be used to establish a connection.
+<center>
+<img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
 
-### Upload/Download via the command line
-If the operating system you are using has a unix/linux based terminal then the NeLS server can be accessed via ssh and scp command depending on what is needed.
+Screenshot of the Personal Area in the NeLS portal, highlighted blocks: 1. Upload File(s), Add New Folder; 2. File and folder manipulation; 3. Rename file or folder; 4. (De)select all/some items; 5. Projects Area - the same functionality available there as in the Personal Area.
+</center>
+
+### Collect the necessary connection details from the NeLS portal 
+
+Access to NeLS using `scp` or `sftp` (be it via command line or with a program like FileZilla) requires three specific pieces of information: host address (1.), username - which differs from FEiDE ID and Idp (2.), and SSH private key associated with the username (3.). All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window are shown below.    
+
+<center>
+<img src="images/NeLS_connection_details_navigation.png" width="600" alt="NeLS Connection Details Navigation" />
+
+NeLS portal - Navigation to menu with connection details.
+</center>
+
+<center>
+<img src="images/NeLS_connection_details.png" width="400" alt="NeLS Connection Details" />
+
+NeLS portal - Connection Details: 1. host, 2. username, 3. key.
+</center>
+
+Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`nelstor0.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
+
+### Upload/Download using dedicated programs (FileZilla setup)
+
+Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can also be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. 
+
+When using FileZilla, select `File` from the top menu and open `Site Manager...`. Click on the `New Site` button and call the new site `NeLS`.
+
+Perform the following changes to the form:
+   1. Change `Protocol` to `SFTP - SSH File Transfer Protocol`.
+   2. Fill in `Host` from the NeLS Connection Details.
+   3. Change `Logon Type` to `Key File`.
+   4. Fill in `Username` from the NeLS Connection Details.
+   5. Browse for the Key File, allow all file types to show in the pop-up window and select the SSH Key File downloaded from the NeLS portal.
+
+The Site Manager Form will at the end look similar to the screenshot below. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied.
+
+<center>
+<img src="images/NeLS_FileZilla_site_manager_filled" width="600" alt="FileZilla site manager filled" />
+
+FileZilla New Site Manager Form - filled, info from the NeLS Connection Details in 1.,2.,3.
+</center>
+
+When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
+
+
+### Upload/Download via the command line using `scp`
+
+<If the operating system you are using has a unix/linux based terminal then the NeLS server can be accessed via ssh and scp command depending on what is needed.
 
 Mac OS and Linux operating systems come with terminal access by default and Windows users can download an app such as Ubuntu for WIndows via the Microsoft Store to install a linux terminal.
 
@@ -87,6 +134,48 @@ The key as well as a user’s user name which is not the same as their FEiDE ID 
 ![](images/NeLs_DataTransfer_CLI.png)
 
 	The host address, nelstor0.cbu.uib.no, is common for all users.
+>
+
+1. Upload a file into the `Personal` folder:
+
+```
+$ scp -i <SSH_key> \
+>  <file> \
+>  <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+```
+
+2. Upload a file into a project folder:
+
+```
+$ scp -i <SSH_key> \
+> <file> \
+> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
+```
+
+3. Upload a folder recursively:
+
+```
+$ scp -r -i <SSH_key> \
+> <folder> \
+> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+```
+
+4. Download a file from the `Personal` folder:
+
+```
+$ scp -i <SSH_key> \
+> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/<file> \
+> <destination_local>
+```
+
+5. Download a folder from a project folder:
+
+```
+$ scp -r -i <SSH_key> \
+> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
+> <destination_local>
+```
+
 
 ## Midterm data storage in NeLS and SBI
 NeLS is meant for storing and sharing active project data. This is typically data that are being analysed and shared with collaborators during a project. Data normally reside here for months/years.
