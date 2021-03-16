@@ -74,10 +74,10 @@ For quick browsing and simple file access a user can log into NeLS at https://ne
 
 This access option is used when data needs to be backed up from NeLS to SBI, for details see section "Medterm data storage in NeLS and SBI".
 
+Here is a screenshot of the Personal Area in the NeLS portal.  The numbered blocks highlight the following features: 1. Upload File(s), Add New Folder; 2. File and folder manipulation; 3. Rename file or folder; 4. (De)select all/some items; 5. Projects Area - the same functionality available there as in the Personal Area.
+
 <p align="middle">
 <img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
-
-Screenshot of the Personal Area in the NeLS portal, highlighted blocks: 1. Upload File(s), Add New Folder; 2. File and folder manipulation; 3. Rename file or folder; 4. (De)select all/some items; 5. Projects Area - the same functionality available there as in the Personal Area.
 </p>
 
 ### Collect the necessary connection details from the NeLS portal 
@@ -107,41 +107,39 @@ Perform the following changes to the form:
    4. Fill in `Username` from the NeLS Connection Details.
    5. Browse for the Key File, allow all file types to show in the pop-up window and select the SSH Key File downloaded from the NeLS portal.
 
-The Site Manager Form will at the end look similar to the screenshot below with 1., 2., and 3. highlighting the filled in connection details. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied.
+The Site Manager Form will at the end look similar to the screenshot below with 1., 2., and 3. highlighting the filled in connection details. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied. When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
 
 <p align="middle">
 <img src="images/NeLS_FileZilla_site_manager_filled.png" width="600" alt="FileZilla site manager filled" />
 </p>
 
 
-When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
-
 
 ### Upload/Download via the command line using `scp`
 
-Here is a list of several examples of how to upload files and folders to NeLS using `scp` command as well as how to download them. To be able to follow this section, one needs to gather the connection details specified in the section "Collect the necessary connection details from the NeLS portal".
+Here is a list of several examples of how to upload files and folders to NeLS using `scp` command as well as how to download them. In the examples,`\` at the end of the lines indicate command split accross multiple lines and can be omitted. Characters `$` and `>` at the beginning of the lines do not belong to the commands, they only mimic most likely response of a terminal window to the command splitting with `\` . To be able to follow this section, one needs to gather the connection details specified in the section "Collect the necessary connection details from the NeLS portal".
 
 
 1. Upload a file into the `Personal` folder:
-		```
-		$ scp -i <SSH_key> \
-		>  <file> \
-		>  <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
-		```
+	```
+	$ scp -i <SSH_key> \
+	>  <file> \
+	>  <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+	```
 
 2. Upload a file into a project folder:
-		```
-		$ scp -i <SSH_key> \
-		> <file> \
-		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
-		```
+	```
+	$ scp -i <SSH_key> \
+	> <file> \
+	> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
+	```
 
 3. Upload a folder (recursive upload, `-r` option):
-		```
-		$ scp -r -i <SSH_key> \
-		> <folder> \
-		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
-		```
+	```
+	$ scp -r -i <SSH_key> \
+	> <folder> \
+	> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+	```
 
 4. Download a file from the `Personal` folder:
 	```
