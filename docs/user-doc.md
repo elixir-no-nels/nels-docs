@@ -74,33 +74,33 @@ For quick browsing and simple file access a user can log into NeLS at https://ne
 
 This access option is used when data needs to be backed up from NeLS to SBI, for details see section "Medterm data storage in NeLS and SBI".
 
-<center>
+<p align="middle">
 <img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
 
 Screenshot of the Personal Area in the NeLS portal, highlighted blocks: 1. Upload File(s), Add New Folder; 2. File and folder manipulation; 3. Rename file or folder; 4. (De)select all/some items; 5. Projects Area - the same functionality available there as in the Personal Area.
-</center>
+</p>
 
 ### Collect the necessary connection details from the NeLS portal 
 
 Access to NeLS using `scp` or `sftp` (be it via command line or with a program like FileZilla) requires three specific pieces of information: host address (1.), username - which differs from FEiDE ID and Idp (2.), and SSH private key associated with the username (3.). All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window are shown below.    
 
-<center>
+<p align="middle">
 <img src="images/NeLS_connection_details_navigation.png" width="600" alt="NeLS Connection Details Navigation" />
 
 NeLS portal - Navigation to menu with connection details.
-</center>
+</p>
 
-<center>
+<p align="middle">
 <img src="images/NeLS_connection_details.png" width="400" alt="NeLS Connection Details" />
 
 NeLS portal - Connection Details: 1. host, 2. username, 3. key.
-</center>
+</p>
 
 Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`nelstor0.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
 
 ### Upload/Download using dedicated programs (FileZilla setup)
 
-Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can also be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. 
+Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. 
 
 When using FileZilla, select `File` from the top menu and open `Site Manager...`. Click on the `New Site` button and call the new site `NeLS`.
 
@@ -113,31 +113,22 @@ Perform the following changes to the form:
 
 The Site Manager Form will at the end look similar to the screenshot below. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied.
 
-<center>
+<p align="middle">
 <img src="images/NeLS_FileZilla_site_manager_filled" width="600" alt="FileZilla site manager filled" />
 
 FileZilla New Site Manager Form - filled, info from the NeLS Connection Details in 1.,2.,3.
-</center>
+</p>
+
 
 When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
 
 
 ### Upload/Download via the command line using `scp`
 
-<If the operating system you are using has a unix/linux based terminal then the NeLS server can be accessed via ssh and scp command depending on what is needed.
+Here is a list of multiple examples of how to upload files and folders to NeLS using `scp` command as well as how to download them. To be able to follow this section, one needs to gather the connection details specified in section "Collect the necessary connection details from the NeLS portal".
 
-Mac OS and Linux operating systems come with terminal access by default and Windows users can download an app such as Ubuntu for WIndows via the Microsoft Store to install a linux terminal.
-
-Access to NeLS via this method requires a SSH private key available from inside the NeLS webportal.
-
-The key as well as a user’s user name which is not the same as their FEiDE ID can be found in the Connection Details tab accessible from the top right of the NeLS webportal pages as shown below.
-![](images/NeLs_DataTransfer_CLI.png)
-
-	The host address, nelstor0.cbu.uib.no, is common for all users.
->
 
 1. Upload a file into the `Personal` folder:
-
 ```
 $ scp -i <SSH_key> \
 >  <file> \
@@ -145,15 +136,13 @@ $ scp -i <SSH_key> \
 ```
 
 2. Upload a file into a project folder:
-
 ```
 $ scp -i <SSH_key> \
 > <file> \
 > <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
 ```
 
-3. Upload a folder recursively:
-
+3. Upload a folder (recursive upload, `-r` option):
 ```
 $ scp -r -i <SSH_key> \
 > <folder> \
@@ -161,15 +150,20 @@ $ scp -r -i <SSH_key> \
 ```
 
 4. Download a file from the `Personal` folder:
-
 ```
 $ scp -i <SSH_key> \
 > <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/<file> \
 > <destination_local>
 ```
 
-5. Download a folder from a project folder:
+5. Download all files with extension `.txt` from the `Personal` folder (wildcard usage):
+```
+$ scp -i <SSH_key> \
+> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/*.txt \
+> <destination_local>
+```
 
+6. Download a folder from a project folder (recursive download, `-r` option):
 ```
 $ scp -r -i <SSH_key> \
 > <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
