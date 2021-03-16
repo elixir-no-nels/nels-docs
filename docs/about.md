@@ -42,7 +42,7 @@ The architecture of NeLS has a tiered structure, with three natural layers that 
 NeLS is accessible to all Norwegian researchers and international research collaborators of their projects.
 
 #### What type of data can be stored in NeLS?
-NeLS is for storage of non-sensitive data Life science data. 
+NeLS is for storage of non-sensitive Life science data. 
 
 Sensitive data must be stored using other platforms that allows collection, storage and analysis of sensitive research data in a secure environment, such as [TSD](https://www.uio.no/english/services/it/research/sensitive-data/index.html) or the [HUNT Cloud](https://www.ntnu.edu/mh/huntcloud)" 
 
@@ -51,7 +51,7 @@ All users with FEIDE login credentials can access the NeLS Portal at [https://ne
 
 !!! tip
 
-     If you are in doubt that your University/institution has been connected to the NeLS Portal, please contact contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no). We can support you in how to get your institution connected to our service.
+     If you are in doubt whether your University/institution has been connected to the NeLS Portal, please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no). We can support you to get your institution connected to our service.
 
 To access the NeLS portal, see [Accessing NeLS](./user-doc.html#accessing_nels)
    
@@ -60,10 +60,10 @@ Ii is also possible to login to NeLS via a NeLS idp. You can apply for a NeLS id
 
 !!! info
 
-     We only generate NeLS ipd to users that applies with an institutional email address (your email at your institution) and not to e.g. gmail addresses
+     NeLS ipd are generted only for users that apply with an institutional email address (your email at your institution) and not to e.g. gmail addresses
 
 ## Access to SBI
-If you have access to NeLS, you also have access to SBI, given that you are part of a storage project with a storage quota in SBI.
+If you have access to NeLS, you also gain access to SBI, given that you are part of a storage project with a storage quota in SBI.
 
 ## Storage quota in SBI
 #### Who can get storage quotas in SBI?
@@ -77,9 +77,9 @@ Research projects (with a Norwegian partner) that do not fall into the definitio
 
 #### How can I get a storage quota in SBI?
 
-If you data is generated at one of the Norwegian sequencing core facilities organized in NorSeq, your core facility can help you with the application and directly upload the data to NeLS for you.
+If your data is generated at one of the Norwegian sequencing core facilities organized in NorSeq, your core facility can help you with the application and directly upload the data to your NeLS project.
 
-If your data is generated else where you can contact ELIXIR Norway support desk directly and apply for a storage quota in SBI
+If your data is generated elsewhere, you can contact ELIXIR Norway support desk directly and apply for a storage quota in SBI
 
 
 ## Terminology
@@ -89,9 +89,9 @@ If your data is generated else where you can contact ELIXIR Norway support desk 
 	This part of the page is still under construction
 
 ## How safe and secure are data in NeLS?
-The NeLS storage layer has built in redundancy against data loss due to hardware failure at disk and server levels. 
+The NeLS storage layer has built-in redundancy against data loss due to hardware failure at disk and server levels. 
 
-The StoreBioinfo storage layer is protected against data loss by both hardware redundancy mechanisms and snapshot feature, as well as periodic (quarterly) independent backup to a tape robot system situated in a separate fire protected zone. 
+The StoreBioinfo storage layer is also protected against data loss by both hardware redundancy mechanisms and snapshot feature, as well as periodic (quarterly) independent backup to a tape robot system situated in a separate fire protected zone. 
 
 !!! note
 
