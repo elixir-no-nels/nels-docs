@@ -32,7 +32,7 @@ Mac OS and Linux operative systems come with terminal access by default and Wind
 #### SFTP Software
 Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can also be used to access data in NeLS.
 
-Due to needing the SSH key quick connect methods in these tools can not be used. Instead connections have to be properly set up inside the tools’ configurations options such as Filezilla’s Site Manager. Go [here](./user-doc.html#transfer-data-to-and-from-nels) for a detailed description on how to set up the Filezilla connection to NeLS. 
+Due to needing the SSH key quick connect methods in these tools can not be used. Instead connections have to be properly set up inside the tools’ configurations options such as Filezilla’s Site Manager. Go [here](user-doc.html#transfer-data-to-and-from-nels) for a detailed description on how to set up the Filezilla connection to NeLS. 
 
 !!! info
 
@@ -73,6 +73,58 @@ Joshua and Tina
 ### Upload/Download using FileZilla
 
 ### Upload/Download using ssh
+
+## Transfer data to and from SBI
+SBI is only connected to NeLS. Data has to reside in NeLS before it can be imported in SBI, and data in SBI can only be exported to NeLS. You need to be member of a SBI project before you can transfer data between NeLS and SBI 
+
+!!! note
+
+	The only way to transfer data between NeLS and SBI is through the NeLS Portal web GUI. Data
+
+#### Importing data in SBI
+You will find all SBI projects you are a member of under the `StoreBioInfo` menu in the [NeLS Portal](https://nels.bioinfo.no/). You will see both your NeLS projects [1] (Personal and Projects) to the left of the screen and the SBI projects to the right [2].
+
+Select the SBI project you would like to import data in. There might already exist datasets in the project [3], or you can [create a new dataset](user-doc.html#create-new-dataset-in-sbi) for new datasets.
+
+Select the dataset you want to import data into [4] and the subfolder for the data [5]. The subfolder structure is automatically generated when a new dataset is created, and normally contain a folder named `rawdata` for the data from the data provider (e.g. fastq files prior to analysis) and a folder named `analysis` for the analysed data (e.g. assemblies and alignment files).
+
+<p align="middle">
+<img src="images/SBI_NeLS_transfer.png" alt="drawing" width="800"/>
+</p align="middle">
+
+On the NeLS side, browser to the project and folders or files that you want to transfer to SBI [1]. Select single files [2] or all files [3]. Make sure you are in the correct destination folder on the SBI side [4], and press `Transfer to SBI` [5].
+
+!!! note
+
+	If you have a large number of files to transfer, you can transfer the whole directory containing the files in NeLS to SBI
+
+<p align="middle">
+<img src="images/SBI_NeLS_transfer2.png" alt="drawing" width="500"/>
+</p align="middle">
+
+#### Create new dataset in SBI
+Within an existing project [1] you can create a new dataset by pressing `+ New Dataset` [2]. In the window that appear, select the `Dataset type` form the drop-down menu [3]. You also need to give the dataset a `Name` [5] and a short `Description` [5]. Finally, press `Create` to make the new dataset folder in SBI.
+
+<p align="middle">
+<img src="images/SBI_NeLS_transfer3.png" alt="drawing" width="550"/>
+</p align="middle">
+
+!!! note
+
+	If you have a large number of files to transfer, you can transfer the whole directory containing the files in NeLS to SBI
+
+The new dataset should appear on the list of datasets [1] in the project you created it in [2]. This should also have created subfolders for raw data and analysed data [3]. It is possible to edit the `Name` and `Description` of the dataset [4].
+
+<p align="middle">
+<img src="images/SBI_NeLS_transfer4.png" alt="drawing" width="350"/>
+</p align="middle">
+
+#### Exporting data from SBI
+Exporting data from SBI to NeLS is similar to importing files to SBI from NeLS. Make sure you are in the correct destination folder on the NeLS side [1]. On the SBI side, browser to the project and folders or files that you want to transfer to SBI [2], and press `Transfer to NeLS` [3].
+
+<p align="middle">
+<img src="images/SBI_NeLS_transfer5.png" alt="drawing" width="550"/>
+</p align="middle">
 
 ## Midterm data storage in NeLS and SBI
 NeLS is meant for storing and sharing active project data. This is typically data that are being analysed and shared with collaborators during a project. Data normally reside here for months/years.
@@ -139,7 +191,7 @@ Galaxy offer multiple ways to delete datasets and histories. The are two major t
 
 !!! note
 
-     We strongly encourage that you copy your histories to NeLS and permanently delete data from usegalaxy.no when you are done with your data analysis. This will free up your personal disk space in usegalaxy.no. To backup data to NeLS see [this documentation](usegalaxy_ImportExport.md)
+     We strongly encourage that you copy your histories to NeLS and permanently delete data from usegalaxy.no when you are done with your data analysis. This will free up your personal disk space in usegalaxy.no. To backup data to NeLS see [this documentation](user-doc.html#import-and-export-galaxy-histories-to-and-from-nels)
 
 ### Delete datasets
 Select the dataset(s) you want to delete (temporary) by pressing "**X**" next to the dataset in your "**History**" panel [1]. The dataset should disappear from you history, but you still access it [2]

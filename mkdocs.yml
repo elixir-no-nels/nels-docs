@@ -6,7 +6,6 @@ repo_uri: blob/main/docs/
 site_description: Documentation for ELIXIR Norway and the Norwegian e-Infrastructure for Life Sciences - NeLS
 theme: readthedocs
 copyright: This documentation under <a href="https://github.com/elixir-no-nels/nels-docs/blob/main/LICENSE">Creative Commons Attribution Share Alike 4.0 International</a> license
-
 markdown_extensions:
   - admonition
   - toc:
@@ -14,7 +13,7 @@ markdown_extensions:
 nav:
  - Home: 'index.md'
  - About:
-   - What is ELIXIR Norway: './about.html#what-is-elixir-norway'
+   - What is ELIXIR Norway: 'about.html#what-is-elixir-norway'
    - What is NeLS and SBI: 'about.html#what-is-nels-and-sbi'
    - Access to NeLS: 'about.html#access-to-nels'
    - Access to SBI: 'about.html#access-to-sbi'
@@ -26,9 +25,10 @@ nav:
  - User Documentation:
    - Accessing NeLS: 'user-doc.html#accessing-nels'
    - Transfer data to and from NeLS: 'user-doc.html#transfer-data-to-and-from-nels'
+   - Transfer data to and from SBI: 'user-doc.html#transfer-data-to-and-from-sbi'
    - Midterm data storage in NeLS/SBI: 'user-doc.html#midterm-data-storage-in-nels-and-sbi'
    - Where to deposit data long term: 'user-doc.html#where-to-deposit-data-long-term'
-   - Import and export data to and from NeLS: 'user-doc.html#import-and-export-galaxy-histories-to-and-from-nels'
+   - Import and export Galaxy histories to and from NeLS: 'user-doc.html#import-and-export-galaxy-histories-to-and-from-nels'
    - Delete and permanent delete data in usegalaxy.no: 'user-doc.html#delete-and-permanent-delete-data-in-usegalaxyno'
    - Import and export workflows in usegalaxy.no: 'user-doc.html#import-and-export-workflows-in-usegalaxyno'
    - Where: 'user-doc.html#Where'
