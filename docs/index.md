@@ -27,9 +27,6 @@ Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - N
 * [Accessing NeLS](user-doc.html#accessing-nels)
 * [Download private SSH key](user-doc.html#download-private-ssh-key)
 * [Transfer data to and from NeLS](user-doc.html#transfer-data-to-and-from-nels)
-  * Upload/Download data using the Web interface
-  * Upload/Download using FileZilla
-  * Upload/Download using ssh
 * [Transfer data to and from SBI](user-doc.html#transfer-data-to-and-from-sbi)
 * [Midterm data storage in NeLS and SBI](user-doc.html#midterm-data-storage-in-nels-and-sbi)
 * [Where to deposit data long term](user-doc.html#where-to-deposit-data-long-term)

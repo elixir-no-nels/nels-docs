@@ -60,14 +60,6 @@ The key is now ready for use via the command line or through SFTP Software.
 
 ## Transfer data to and from NeLS
 
-
-!!! warning
-
-	This part of the page is still under construction
-
-
-Joshua and Tina
-
 ### Upload/Download data using the Web interface of the NeLS portal
 
 For quick browsing and simple file access a user can log into NeLS at https://nels.bioinfo.no/ using either their FEiDE identity if they are a member of a Norewegian institution or a NeLS identity which can be created by members of the Elixir Helpdesk with access to the NelS admin tools.
