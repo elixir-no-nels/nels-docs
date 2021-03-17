@@ -183,10 +183,10 @@ On the NeLS side, browser to the project and folders or files that you want to t
 </p align="middle">
 
 #### Create new dataset in SBI
-Within an existing project [1] you can create a new dataset by pressing `+ New Dataset` [2]. In the window that appear, select the `Dataset type` form the drop-down menu [3]. You also need to give the dataset a `Name` [5] and a short `Description` [5]. Finally, press `Create` to make the new dataset folder in SBI.
+Within an existing project [1] you can create a new dataset by pressing `+ New Dataset` [2]. In the window that appear, select the `Dataset type` form the drop-down menu [3]. You also need to give the dataset a `Name` [5] and a short `Description` [5]. Finally, press `Create` [6] to make the new dataset folder in SBI.
 
 <p align="middle">
-<img src="images/SBI_NeLS_transfer3.png" alt="drawing" width="550"/>
+<img src="images/SBI_NeLS_transfer4.png" alt="drawing" width="600"/>
 </p align="middle">
 
 !!! note
@@ -196,14 +196,14 @@ Within an existing project [1] you can create a new dataset by pressing `+ New D
 The new dataset should appear on the list of datasets [1] in the project you created it in [2]. This should also have created subfolders for raw data and analysed data [3]. It is possible to edit the `Name` and `Description` of the dataset [4].
 
 <p align="middle">
-<img src="images/SBI_NeLS_transfer4.png" alt="drawing" width="350"/>
+<img src="images/SBI_NeLS_transfer5.png" alt="drawing" width="350"/>
 </p align="middle">
 
 #### Exporting data from SBI
 Exporting data from SBI to NeLS is similar to importing files to SBI from NeLS. Make sure you are in the correct destination folder on the NeLS side [1]. On the SBI side, browser to the project and folders or files that you want to transfer to SBI [2], and press `Transfer to NeLS` [3].
 
 <p align="middle">
-<img src="images/SBI_NeLS_transfer5.png" alt="drawing" width="550"/>
+<img src="images/SBI_NeLS_transfer3.png" alt="drawing" width="550"/>
 </p align="middle">
 
 ## Midterm data storage in NeLS and SBI
