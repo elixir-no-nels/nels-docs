@@ -25,7 +25,7 @@ For quick browsing and simple file access you can log into [NeLS](https://nels.b
 
      In order to access NeLS through a command line, you need to collect some connection details from the NeLS portal. See [this](user-doc.html#collect-connection-details-from-the-nels-portal) section for how to download a private SSH key.
 
-After gathering your username and SSH key, you can `ssh` to NeLS using the following command:
+After gathering your username and SSH key, you can use `ssh` to access NeLS with the following command:
 
 ```
 ssh -i <SSH_key> <username>@nelstor0.cbu.uib.no
