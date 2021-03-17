@@ -7,56 +7,42 @@
 
 
 ## Accessing NeLS
-There is three ways you can access data on NeLS:
+There are two ways you can access data on NeLS:
 
 * Via the [NeLS portal](https://nels.bioinfo.no/) online GUI
-* Through a command line
-* SFTP software (e.g. [FileZilla](https://filezilla-project.org/))
+* Using `ssh` through command line
 
-!!! info
-
-     In order to access NeLS through a terminal or SFTP software, you need to download a private SSH key. See [this](user-doc.html#download-private-ssh-key) section for how to download a private SSH key
-
-#### Via the NeLS portal
+### Via the NeLS portal
 For quick browsing and simple file access you can log into [NeLS](https://nels.bioinfo.no/) using either their FEIDE identity if you are a member of a Norewegian institution or a NeLS identity which can be requested by contacting the ELIXIR support desk (See [I don't have FEIDE login credentials](about.html#i-dont-have-feide-login-credentials)).
 
 !!! info
 
      This access option is used when data needs to be backed up from NeLS in SBI
 
-#### Command Line
-If the operating system you are using has a unix/linux based terminal then the NeLS server can be accessed via ssh and scp command depending on what is needed.
-
-Mac OS and Linux operative systems come with terminal access by default and Windows users can download an app such as Ubuntu for Windows via the Microsoft Store to install a linux terminal.
-
-#### SFTP Software
-Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can also be used to access data in NeLS.
-
-Due to needing the SSH key quick connect methods in these tools can not be used. Instead connections have to be properly set up inside the tools’ configurations options such as Filezilla’s Site Manager. Go [here](user-doc.html#transfer-data-to-and-from-nels) for a detailed description on how to set up the Filezilla connection to NeLS. 
+### Using `ssh` through command Line
 
 !!! info
 
-     Please note that when using a SSH key, permissions can become important. It may become necessary to edit the permissions of the downloaded key file and the easiest way to do this is via a command using a chmod command.
+     In order to access NeLS through a command line, you need to collect some connection details from the NeLS portal. See [this](user-doc.html#collect-connection-details-from-the-nels-portal) section for how to download a private SSH key.
 
-## Download private SSH key
+After gathering your username and SSH key, you can `ssh` to NeLS using the following command:
 
-To access to NeLS via the command line or through SFTP Software requires a SSH private key. This key is available from inside the NeLS webportal. In order to download the key, you must first log in to the [NeLS portal](https://nels.bioinfo.no/).
+```
+ssh -i <SSH_key> <username>@nelstor0.cbu.uib.no
+```
 
-The key as well as a user’s user name which is not the same as their FEIDE ID can be found in the `Connection Details` tab accessible from the top right of the NeLS portal page, under your user name.
+Absolute path to the home directory is `/elixir-chr/nels/users/<username>`.
+
+## Collect connection details from the NeLS portal 
+
+Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with programs like PuTTY and FileZilla) requires three specific pieces of information: host address (1.), username (2.) - it differs from FEiDE ID and Idp, and SSH private key associated with the username (3.). All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window with highlighted connection details are shown below.
 
 <p align="middle">
-<img src="images/nels_access.png" alt="drawing" width="600"/>
-</p align="middle">
+<img src="images/nels_access.png" alt="NeLS Connection Details" width="600"/>
+</p>
 
-Download your private SSH key by pressing `Download Key`. Save the file on your local computer.
+Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`nelstor0.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
 
-Before you can start using this key, you need change the file mode of key. For Windows users we recommend that you install [Git for Windows](https://git-scm.com/download/win) first. A detailed description of how to install Git for Windows can be found in the [carpentries repository](https://carpentries.github.io/workshop-template/#shell) in GitHub
-
-In a terminal window type (replace <user> with your NeLS username - see image above):
-
-    chmod 600 <user>@nelstor0.cbu.uib.no.key
-
-The key is now ready for use via the command line or through SFTP Software.
 
 ## Transfer data to and from NeLS
 
@@ -64,27 +50,13 @@ The key is now ready for use via the command line or through SFTP Software.
 
 For quick browsing and simple file access a user can log into NeLS at https://nels.bioinfo.no/ using either their FEiDE identity if they are a member of a Norewegian institution or a NeLS identity which can be created by members of the Elixir Helpdesk with access to the NelS admin tools.
 
-This access option is used when data needs to be backed up from NeLS to SBI, for details see section "Medterm data storage in NeLS and SBI".
+This access option is used when data needs to be backed up from NeLS to SBI, for details see section [Midterm data storage in NeLS and SBI](user-doc.html#midterm-data-storage-in-nels-and-sbi).
 
 Here is a screenshot of the Personal Area in the NeLS portal.  The numbered blocks highlight the following features: 1. Upload File(s), Add New Folder; 2. File and folder manipulation; 3. Rename file or folder; 4. (De)select all/some items; 5. Projects Area - the same functionality available there as in the Personal Area.
 
 <p align="middle">
 <img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
 </p>
-
-### Collect the necessary connection details from the NeLS portal 
-
-Access to NeLS using `scp` or `sftp` (be it via command line or with a program like FileZilla) requires three specific pieces of information: host address (1.), username - which differs from FEiDE ID and Idp (2.), and SSH private key associated with the username (3.). All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window with highlighted connection details are shown below.    
-
-<p align="middle">
-<img src="images/NeLS_connection_details_navigation.png" width="600" alt="NeLS Connection Details Navigation" />
-</p>
-
-<p align="middle">
-<img src="images/NeLS_connection_details.png" width="400" alt="NeLS Connection Details" />
-</p>
-
-Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`nelstor0.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
 
 ### Upload/Download using dedicated programs (FileZilla setup)
 
