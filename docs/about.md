@@ -79,7 +79,7 @@ Research projects (with a Norwegian partner) that do not fall into the definitio
 
 If your data is generated at one of the Norwegian sequencing core facilities organized in NorSeq, your core facility can help you with the application and directly upload the data to your NeLS project.
 
-If your data is generated elsewhere, you can contact ELIXIR Norway support desk directly and apply for a storage quota in SBI
+If your data is generated elsewhere, you can contact <a href="mailto:contact@bioinfo.no?subject=NeLS-SEEK quota">ELIXIR-NO Helpdesk</a> directly and apply for a storage quota in SBI.
 
 
 ## Terminology
@@ -97,6 +97,23 @@ The StoreBioinfo storage layer is also protected against data loss by both hardw
 
 	A detailed description of the backup of the system can be found in the [NeLS Terms of reference](https://nels.bioinfo.no/pages/user-terms.xhtml)
 
+## About usegalaxy.no
+
+#### What is usegalaxy.no
+[usegalaxy.no](https://usegalaxy.no/) is the national Galaxy server for life science data analysis hosted and maintained by ELIXIR Norway. Galaxy is a web-based platform that provide bioinformatic tools and workflows. [usegalaxy.no](https://usegalaxy.no/) is open to all Norwegian user and collaborators.
+
+You can read more about Galaxy in the [Galaxy Community Hub](https://galaxyproject.org/).
+
+[usegalaxy.no](https://usegalaxy.no/) is directly connected to your data storage in [NeLS](https://nels.bioinfo.no/). This exclude the need for local copy of your data. You can simply transfer data directly between [usegalaxy.no](https://usegalaxy.no/) and [NeLS](https://nels.bioinfo.no/).
+
+#### Who can access usegalaxy.no
+If you have access to NeLS, you also have access to usegalaxy.no
+
+!!! info
+
+	For usegalaxy.no user support please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
+
+
 ## How to cite us
 
 !!! warning
@@ -105,9 +122,30 @@ The StoreBioinfo storage layer is also protected against data loss by both hardw
 
 #### NeLS publication
 
-We are in the process of writing a F1000 paper describing the NeLS infrastructure. As soon as it is published, it will be linked here and possible to use for citations.
+Please cite [our F1000Research publication](https://doi.org/10.12688/f1000research.15119.1) on NeLS if you are using NeLS for your project:
 
-#### Text suggestion for citing us
+
+
+    Tekle KM, Gundersen S, Klepper K, Bongo LA, Raknes IA, Li X, et al. Norwegian e-Infrastructure for Life Sciences (NeLS). F1000Res [Internet]. 2018 Jun 29 ;7:968. Available from: https://doi.org/10.12688/f1000research.15119.1
+
+```
+@article{tekle_norwegian_2018,
+	title = {Norwegian e-{Infrastructure} for {Life} {Sciences} ({NeLS})},
+	volume = {7},
+	issn = {2046-1402},
+	url = {https://f1000research.com/articles/7-968/v1},
+	doi = {10.12688/f1000research.15119.1},
+	language = {en},
+	urldate = {2019-12-17},
+	journal = {F1000Research},
+	author = {Tekle, Kidane M. and Gundersen, Sveinung and Klepper, Kjetil and Bongo, Lars Ailo and Raknes, Inge Alexander and Li, Xiaxi and Zhang, Wei and Andreetta, Christian and Mulugeta, Teshome Dagne and Kalaš, Matúš and Rye, Morten B. and Hjerde, Erik and Antony Samy, Jeevan Karloss and Fornous, Ghislain and Azab, Abdulrahman and Våge, Dag Inge and Hovig, Eivind and Willassen, Nils Peder and Drabløs, Finn and Nygård, Ståle and Petersen, Kjell and Jonassen, Inge},
+	month = jun,
+	year = {2018},
+	pages = {968}
+}
+```
+
+#### Please also refer to us in your acknowledgement
 
 ##### If the project was supported 2017 - 2021 please add:
 
@@ -127,20 +165,4 @@ We are in the process of writing a F1000 paper describing the NeLS infrastructur
 
 ##### If the project used the usegalaxy.no to analyse data:
 
-“..............used usegalaxy.no provided by ELIXIR Norway, supported by the Research Council of Norway’s grant [270068|208481] for data analysis.”
-
-## About usegalaxy.no
-
-#### What is usegalaxy.no
-[usegalaxy.no](https://usegalaxy.no/) is the national Galaxy server for life science data analysis hosted and maintained by ELIXIR Norway. Galaxy is a web-based platform that provide bioinformatic tools and workflows. [usegalaxy.no](https://usegalaxy.no/) is open to all Norwegian user and collaborators.
-
-You can read more about Galaxy in the [Galaxy Community Hub](https://galaxyproject.org/).
-
-[usegalaxy.no](https://usegalaxy.no/) is directly connected to your data storage in [NeLS](https://nels.bioinfo.no/). This exclude the need for local copy of your data. You can simply transfer data directly between [usegalaxy.no](https://usegalaxy.no/) and [NeLS](https://nels.bioinfo.no/).
-
-#### Who can access usegalaxy.no
-If you have access to NeLS, you also have access to usegalaxy.no
-
-!!! info
-
-	For usegalaxy.no user support please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
+“..............used usegalaxy.no provided by ELIXIR Norway, supported by the Research Council of Norway’s grant 270068 for data analysis.”
