@@ -35,7 +35,7 @@ Absolute path to the home directory is `/elixir-chr/nels/users/<username>`.
 
 ## Collect connection details from the NeLS portal 
 
-Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with programs like PuTTY and FileZilla) requires three specific pieces of information: host address (1.), username (2.) - it differs from FEiDE ID and Idp, and SSH private key associated with the username (3.). All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window with highlighted connection details are shown below.
+Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with programs like PuTTY and FileZilla) requires three specific pieces of information: host address [1], username [2] - it differs from FEiDE ID and Idp, and SSH private key associated with the username [3]. All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window with highlighted connection details are shown below.
 
 <p align="middle">
 <img src="images/nels_access.png" alt="NeLS Connection Details" width="600"/>
@@ -52,7 +52,7 @@ For quick browsing and simple file access a user can log into NeLS at https://ne
 
 This access option is used when data needs to be backed up from NeLS to SBI, for details see section [Midterm data storage in NeLS and SBI](user-doc.html#midterm-data-storage-in-nels-and-sbi).
 
-Here is a screenshot of the Personal Area in the NeLS portal.  The numbered blocks highlight the following features: 1. Upload File(s), Add New Folder; 2. File and folder manipulation; 3. Rename file or folder; 4. (De)select all/some items; 5. Projects Area - the same functionality available there as in the Personal Area.
+Here is a screenshot of the Personal Area in the NeLS portal. The numbered blocks highlight the following features: [1] Upload File(s), Add New Folder; [2] File and folder manipulation; [3] Rename file or folder; [4] (De)select all/some items; [5] Projects Area - the same functionality available there as in the Personal Area.
 
 <p align="middle">
 <img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
@@ -71,7 +71,7 @@ Perform the following changes to the form:
    4. Fill in `Username` from the NeLS Connection Details.
    5. Browse for the Key File, allow all file types to show in the pop-up window and select the SSH Key File downloaded from the NeLS portal.
 
-The Site Manager Form will at the end look similar to the screenshot below with 1., 2., and 3. highlighting the filled in connection details. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied. When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
+The Site Manager Form will at the end look similar to the screenshot below with [1], [2], and [3] highlighting the filled in connection details. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied. When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
 
 <p align="middle">
 <img src="images/NeLS_FileZilla_site_manager_filled.png" width="600" alt="FileZilla site manager filled" />
