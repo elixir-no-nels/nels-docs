@@ -184,7 +184,7 @@ NeLS is meant for storing and sharing active project data. This is typically dat
 SBI is meant for more long term storage of project data. This is typically data that are not being analysed at the moment, but is planned to included later in the project. Data normally reside here for years
 
 ## Where to deposit data long term
-When a project is ready for publication, the data should be deposited in public data repositories (deposition databases or data archives) suitable for the type of data. A project can hold different types of data that should be submitted to different data repositories.
+When a project is ready for publication, the data should be deposited in public data repositories (deposition databases or data archives) suitable for the type of data. A project can hold different types of data that should be submitted to different data repositories. Many biomolecular data types can be deposited to the [ELIXIR Deposition Databases](https://elixir-europe.org/platforms/data/elixir-deposition-databases).
 
 ELIXIR Norway is a data broker for the [European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home) (ENA) and support Norwegian users to submit sequence data there.
 
