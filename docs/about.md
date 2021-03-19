@@ -91,7 +91,7 @@ If your data is generated elsewhere, you can contact <a href="mailto:contact@bio
 ## How safe and secure are data in NeLS?
 The NeLS storage layer has built-in redundancy against data loss due to hardware failure at disk and server levels. 
 
-The StoreBioinfo storage layer is also protected against data loss by both hardware redundancy mechanisms and snapshot feature, as well as periodic (quarterly) independent backup to a tape robot system situated in a separate fire protected zone. 
+The StoreBioinfo storage layer is implemented on top of the national research data storage solution [NIRD](https://documentation.sigma2.no/files_storage/backup.html), offered by [Sigma2 Uninett A/S](https://www.sigma2.no/). This large capacity, mid term data storage layer is protected against data loss by both hardware redundancy mechanisms and asynchronous geo-replicated storage between two cities in Norway. In addition NIRD implements daily snapshots for the last 7 days and weekly snapshots for the last 6 weeks.
 
 !!! note
 
