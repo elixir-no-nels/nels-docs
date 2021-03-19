@@ -116,13 +116,9 @@ If you have access to NeLS, you also have access to usegalaxy.no
 
 ## How to cite us
 
-!!! warning
-
-	This part of the page is still under construction
-
 #### NeLS publication
 
-Please cite [our F1000Research publication](https://doi.org/10.12688/f1000research.15119.1) on NeLS if you are using NeLS for your project:
+Please cite our [F1000Research publication on NeLS](https://doi.org/10.12688/f1000research.15119.1)  if you are using NeLS for your project:
 
 
 
