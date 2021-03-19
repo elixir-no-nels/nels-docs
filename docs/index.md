@@ -28,6 +28,7 @@ Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - N
 * [Download private SSH key](user-doc.html#download-private-ssh-key)
 * [Transfer data to and from NeLS](user-doc.html#transfer-data-to-and-from-nels)
 * [Transfer data to and from SBI](user-doc.html#transfer-data-to-and-from-sbi)
+* [User roles in NeLS and SBI](user-doc.html#user-roles-in-nels-and-sbi)
 * [Midterm data storage in NeLS and SBI](user-doc.html#midterm-data-storage-in-nels-and-sbi)
 * [Where to deposit data long term](user-doc.html#where-to-deposit-data-long-term)
 * [Import and export data to and from NeLS](user-doc.html#import-and-export-galaxy-histories-to-and-from-nels)

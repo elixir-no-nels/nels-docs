@@ -43,7 +43,6 @@ Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with pro
 
 Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`nelstor0.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
 
-
 ## Transfer data to and from NeLS
 
 ### Upload/Download data using the Web interface of the NeLS portal
@@ -182,6 +181,26 @@ Exporting data from SBI to NeLS is similar to importing files to SBI from NeLS. 
 NeLS is meant for storing and sharing active project data. This is typically data that are being analysed and shared with collaborators during a project. Data normally reside here for months/years.
 
 SBI is meant for more long term storage of project data. This is typically data that are not being analysed at the moment, but is planned to included later in the project. Data normally reside here for years
+
+## User roles in NeLS and SBI
+
+There are multiple user roles to control read/write permissions and to manage project members. These roles are normally set when the project is made by instructions from the PI, but can be changed during the project.
+
+|User role|NeLS|SBI|
+|:---:|:---:|:---:|
+|PI|Manage File system: Add, Rename, Navigate, Download, Delete all Content, Manage members|Add, Navigate, Transfer to NeLS, Manage members|
+|Data manager|Manage File system: Add, Rename, Navigate, Download, Delete all Content, Manage members|Add, Navigate, Transfer to NeLS, Manage members|
+|Power user|Manage File system: Add, Rename, Navigate, Download, Delete all Content|Add, Navigate, Transfer to NeLS, Manage members|
+|Normal user|Add files & folders, Navigate & Download|Navigate & Transfer to NeLS|
+|Help desk|Manage File system: Add, Rename, Navigate, Download, Delete all Content|Add files & folders, Navigate & Transfer to NeLS|
+|Core facility|Add files & folders, Navigate & Download|-|
+|Collaborator|Add files & folders, Navigate & Download|-|
+
+<br/>
+
+!!! note
+
+	If you need support in changing the role of project members, please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
 
 ## Where to deposit data long term
 When a project is ready for publication, the data should be deposited in public data repositories (deposition databases or data archives) suitable for the type of data. A project can hold different types of data that should be submitted to different data repositories. Many biomolecular data types can be deposited to the [ELIXIR Deposition Databases](https://elixir-europe.org/platforms/data/elixir-deposition-databases).
