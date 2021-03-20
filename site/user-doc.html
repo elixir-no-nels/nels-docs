@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>User Documentation - ELIXIR Norway Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "User Documentation";
+    var mkdocs_page_input_path = "user-doc.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> ELIXIR Norway Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">About</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="about.html#what-is-elixir-norway">What is ELIXIR Norway</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#what-is-nels-and-sbi">What is NeLS and SBI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#access-to-nels">Access to NeLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#access-to-sbi">Access to SBI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#storage-quota-in-sbi">Storage quota in SBI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#terminology">Terminology</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#how-safe-and-secure-are-data-in-nels">Data Safety and Security</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#how-to-cite-us">How to cite us</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="about.html#what-is-usegalaxyno">What is usegalaxy.no</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Documentation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#accessing-nels">Accessing NeLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#transfer-data-to-and-from-nels">Transfer data to and from NeLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#transfer-data-to-and-from-sbi">Transfer data to and from SBI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#user-roles-in-nels-and-sbi">User roles in NeLS and SBI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#midterm-data-storage-in-nels-and-sbi">Midterm data storage in NeLS/SBI</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#where-to-deposit-data-long-term">Where to deposit data long term</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#import-and-export-galaxy-histories-to-and-from-nels">Import and export data to and from NeLS</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#delete-and-permanent-delete-data-in-usegalaxyno">Delete and permanent delete data in usegalaxy.no</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#import-and-export-workflows-in-usegalaxyno">Import and export workflows in usegalaxy.no</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="user-doc.html#Where">Where</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Integrations</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="integrations.html#NeLS - SEEK integration">NeLS - SEEK integration</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">ELIXIR Norway Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>User Documentation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/elixir-no-nels/nels-docs/edit/master/docs/user-doc.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="user-documentation">User Documentation<a class="headerlink" href="#user-documentation" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This page is still under construction</p>
+</div>
+<h2 id="accessing-nels">Accessing NeLS<a class="headerlink" href="#accessing-nels" title="Permanent link">&para;</a></h2>
+<p>There are two ways you can access data on NeLS:</p>
+<ul>
+<li>Via the <a href="https://nels.bioinfo.no/">NeLS portal</a> online GUI</li>
+<li>Using <code>ssh</code> through command line</li>
+</ul>
+<h3 id="via-the-nels-portal">Via the NeLS portal<a class="headerlink" href="#via-the-nels-portal" title="Permanent link">&para;</a></h3>
+<p>For quick browsing and simple file access you can log into <a href="https://nels.bioinfo.no/">NeLS</a> using either their FEIDE identity if you are a member of a Norewegian institution or a NeLS identity which can be requested by contacting the ELIXIR support desk (See <a href="about.html#i-dont-have-feide-login-credentials">I don't have FEIDE login credentials</a>).</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This access option is used when data needs to be backed up from NeLS in SBI</p>
+</div>
+<h3 id="using-ssh-through-command-line">Using <code>ssh</code> through command Line<a class="headerlink" href="#using-ssh-through-command-line" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In order to access NeLS through a command line, you need to collect some connection details from the NeLS portal. See <a href="user-doc.html#collect-connection-details-from-the-nels-portal">this</a> section for how to download a private SSH key.</p>
+</div>
+<p>After gathering your username and SSH key, you can use <code>ssh</code> to access NeLS with the following command:</p>
+<pre><code>ssh -i &lt;SSH_key&gt; &lt;username&gt;@nelstor0.cbu.uib.no
+</code></pre>
+<p>Absolute path to the home directory is <code>/elixir-chr/nels/users/&lt;username&gt;</code>.</p>
+<h2 id="collect-connection-details-from-the-nels-portal">Collect connection details from the NeLS portal<a class="headerlink" href="#collect-connection-details-from-the-nels-portal" title="Permanent link">&para;</a></h2>
+<p>Access to NeLS using <code>ssh</code>, <code>scp</code>, or <code>sftp</code> (be it via command line or with programs like PuTTY and FileZilla) requires three specific pieces of information: host address [1], username [2] - it differs from FEiDE ID and Idp, and SSH private key associated with the username [3]. All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window with highlighted connection details are shown below.</p>
+<p align="middle">
+<img src="images/nels_access.png" alt="NeLS Connection Details" width="600"/>
+</p>
+
+<p>Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (<code>nelstor0.cbu.uib.no</code>) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing <code>chmod 600 &lt;SSH_key&gt;</code> into a terminal window. In Windows, one can access the security tab in the <code>Properties</code> option of the <code>&lt;SSH_key&gt;</code> file and keep access granted only to oneself, <code>SYSTEM</code> and <code>Administrators</code>. </p>
+<h2 id="transfer-data-to-and-from-nels">Transfer data to and from NeLS<a class="headerlink" href="#transfer-data-to-and-from-nels" title="Permanent link">&para;</a></h2>
+<h3 id="uploaddownload-data-using-the-web-interface-of-the-nels-portal">Upload/Download data using the Web interface of the NeLS portal<a class="headerlink" href="#uploaddownload-data-using-the-web-interface-of-the-nels-portal" title="Permanent link">&para;</a></h3>
+<p>For quick browsing and simple file access a user can log into NeLS at https://nels.bioinfo.no/ using either their FEiDE identity if they are a member of a Norewegian institution or a NeLS identity which can be created by members of the Elixir Helpdesk with access to the NelS admin tools.</p>
+<p>This access option is used when data needs to be backed up from NeLS to SBI, for details see section <a href="user-doc.html#midterm-data-storage-in-nels-and-sbi">Midterm data storage in NeLS and SBI</a>.</p>
+<p>Here is a screenshot of the Personal Area in the NeLS portal. The numbered blocks highlight the following features: [1] Upload File(s), Add New Folder; [2] File and folder manipulation; [3] Rename file or folder; [4] (De)select all/some items; [5] Projects Area - the same functionality available there as in the Personal Area.</p>
+<p align="middle">
+<img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
+</p>
+
+<h3 id="uploaddownload-using-dedicated-programs-filezilla-setup">Upload/Download using dedicated programs (FileZilla setup)<a class="headerlink" href="#uploaddownload-using-dedicated-programs-filezilla-setup" title="Permanent link">&para;</a></h3>
+<p>Programs such as <a href="https://filezilla-project.org/">FileZilla</a> and <a href="https://winscp.net/eng/download.php">WinSCP</a> can be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. </p>
+<p>When using FileZilla, select <code>File</code> from the top menu and open <code>Site Manager...</code>. Click on the <code>New Site</code> button and call the new site <code>NeLS</code>.</p>
+<p>Perform the following changes to the form:
+   1. Change <code>Protocol</code> to <code>SFTP - SSH File Transfer Protocol</code>.
+   2. Fill in <code>Host</code> from the NeLS Connection Details.
+   3. Change <code>Logon Type</code> to <code>Key File</code>.
+   4. Fill in <code>Username</code> from the NeLS Connection Details.
+   5. Browse for the Key File, allow all file types to show in the pop-up window and select the SSH Key File downloaded from the NeLS portal.</p>
+<p>The Site Manager Form will at the end look similar to the screenshot below with [1], [2], and [3] highlighting the filled in connection details. Press the <code>Connect</code> button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied. When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select <code>NeLS</code> connection when it shows up.</p>
+<p align="middle">
+<img src="images/NeLS_FileZilla_site_manager_filled.png" width="600" alt="FileZilla site manager filled" />
+</p>
+
+<h3 id="uploaddownload-via-the-command-line-using-scp">Upload/Download via the command line using <code>scp</code><a class="headerlink" href="#uploaddownload-via-the-command-line-using-scp" title="Permanent link">&para;</a></h3>
+<p>Here is a list of several examples of how to upload files and folders to NeLS using <code>scp</code> command as well as how to download them. In the examples,<code>\</code> at the end of the lines indicate command split accross multiple lines and can be omitted. Characters <code>$</code> and <code>&gt;</code> at the beginning of the lines do not belong to the commands, they only mimic most likely response of a terminal window to the command splitting with <code>\</code> . To be able to follow this section, one needs to gather the connection details specified in the section "Collect the necessary connection details from the NeLS portal".</p>
+<ol>
+<li>
+<p>Upload a file into the <code>Personal</code> folder:
+    <code>$ scp -i &lt;SSH_key&gt; \
+    &gt;  &lt;file&gt; \
+    &gt;  &lt;username&gt;@nelstor0.cbu.uib.no:/elixir-chr/nels/users/&lt;username&gt;/Personal</code></p>
+</li>
+<li>
+<p>Upload a file into a project folder:
+    <code>$ scp -i &lt;SSH_key&gt; \
+    &gt; &lt;file&gt; \
+    &gt; &lt;username&gt;@nelstor0.cbu.uib.no:/elixir-chr/nels/users/&lt;username&gt;/Projects/&lt;project&gt;</code></p>
+</li>
+<li>
+<p>Upload a folder (recursive upload, <code>-r</code> option):
+    <code>$ scp -r -i &lt;SSH_key&gt; \
+    &gt; &lt;folder&gt; \
+    &gt; &lt;username&gt;@nelstor0.cbu.uib.no:/elixir-chr/nels/users/&lt;username&gt;/Personal</code></p>
+</li>
+<li>
+<p>Download a file from the <code>Personal</code> folder:
+    <code>$ scp -i &lt;SSH_key&gt; \
+    &gt; &lt;username&gt;@nelstor0.cbu.uib.no:/elixir-chr/nels/users/&lt;username&gt;/Personal/&lt;file&gt; \
+    &gt; &lt;destination_local&gt;</code></p>
+</li>
+<li>
+<p>Download all files with extension <code>.txt</code> from the <code>Personal</code> folder (wildcard usage):
+    <code>$ scp -i &lt;SSH_key&gt; \
+    &gt; &lt;username&gt;@nelstor0.cbu.uib.no:/elixir-chr/nels/users/&lt;username&gt;/Personal/*.txt \
+    &gt; &lt;destination_local&gt;</code></p>
+</li>
+<li>
+<p>Download a folder from a project folder (recursive download, <code>-r</code> option):
+    <code>$ scp -r -i &lt;SSH_key&gt; \
+    &gt; &lt;username&gt;@nelstor0.cbu.uib.no:/elixir-chr/nels/users/&lt;username&gt;/Projects/&lt;project&gt;/&lt;folder&gt; \
+    &gt; &lt;destination_local&gt;</code></p>
+</li>
+</ol>
+<h2 id="transfer-data-to-and-from-sbi">Transfer data to and from SBI<a class="headerlink" href="#transfer-data-to-and-from-sbi" title="Permanent link">&para;</a></h2>
+<p>SBI is only connected to NeLS. Data has to reside in NeLS before it can be imported in SBI, and data in SBI can only be exported to NeLS. You need to be member of a SBI project before you can transfer data between NeLS and SBI </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The only way to transfer data between NeLS and SBI is through the NeLS Portal web GUI. Data</p>
+</div>
+<h4 id="importing-data-in-sbi">Importing data in SBI<a class="headerlink" href="#importing-data-in-sbi" title="Permanent link">&para;</a></h4>
+<p>You will find all SBI projects you are a member of under the <code>StoreBioInfo</code> menu in the <a href="https://nels.bioinfo.no/">NeLS Portal</a>. You will see both your NeLS projects [1] (Personal and Projects) to the left of the screen and the SBI projects to the right [2].</p>
+<p>Select the SBI project you would like to import data in. There might already exist datasets in the project [3], or you can <a href="user-doc.html#create-new-dataset-in-sbi">create a new dataset</a> for new datasets.</p>
+<p>Select the dataset you want to import data into [4] and the subfolder for the data [5]. The subfolder structure is automatically generated when a new dataset is created, and normally contain a folder named <code>rawdata</code> for the data from the data provider (e.g. fastq files prior to analysis) and a folder named <code>analysis</code> for the analysed data (e.g. assemblies and alignment files).</p>
+<p align="middle">
+<img src="images/SBI_NeLS_transfer.png" alt="drawing" width="800"/>
+</p align="middle">
+
+<p>On the NeLS side, browser to the project and folders or files that you want to transfer to SBI [1]. Select single files [2] or all files [3]. Make sure you are in the correct destination folder on the SBI side [4], and press <code>Transfer to SBI</code> [5].</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have a large number of files to transfer, you can transfer the whole directory containing the files in NeLS to SBI</p>
+</div>
+<p align="middle">
+<img src="images/SBI_NeLS_transfer2.png" alt="drawing" width="500"/>
+</p align="middle">
+
+<h4 id="create-new-dataset-in-sbi">Create new dataset in SBI<a class="headerlink" href="#create-new-dataset-in-sbi" title="Permanent link">&para;</a></h4>
+<p>Within an existing project [1] you can create a new dataset by pressing <code>+ New Dataset</code> [2]. In the window that appear, select the <code>Dataset type</code> form the drop-down menu [3]. You also need to give the dataset a <code>Name</code> [5] and a short <code>Description</code> [5]. Finally, press <code>Create</code> [6] to make the new dataset folder in SBI.</p>
+<p align="middle">
+<img src="images/SBI_NeLS_transfer4.png" alt="drawing" width="600"/>
+</p align="middle">
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have a large number of files to transfer, you can transfer the whole directory containing the files in NeLS to SBI</p>
+</div>
+<p>The new dataset should appear on the list of datasets [1] in the project you created it in [2]. This should also have created subfolders for raw data and analysed data [3]. It is possible to edit the <code>Name</code> and <code>Description</code> of the dataset [4].</p>
+<p align="middle">
+<img src="images/SBI_NeLS_transfer5.png" alt="drawing" width="350"/>
+</p align="middle">
+
+<h4 id="exporting-data-from-sbi">Exporting data from SBI<a class="headerlink" href="#exporting-data-from-sbi" title="Permanent link">&para;</a></h4>
+<p>Exporting data from SBI to NeLS is similar to importing files to SBI from NeLS. Make sure you are in the correct destination folder on the NeLS side [1]. On the SBI side, browser to the project and folders or files that you want to transfer to SBI [2], and press <code>Transfer to NeLS</code> [3].</p>
+<p align="middle">
+<img src="images/SBI_NeLS_transfer3.png" alt="drawing" width="550"/>
+</p align="middle">
+
+<h2 id="midterm-data-storage-in-nels-and-sbi">Midterm data storage in NeLS and SBI<a class="headerlink" href="#midterm-data-storage-in-nels-and-sbi" title="Permanent link">&para;</a></h2>
+<p>NeLS is meant for storing and sharing active project data. This is typically data that are being analysed and shared with collaborators during a project. Data normally reside here for months/years.</p>
+<p>SBI is meant for more long term storage of project data. This is typically data that are not being analysed at the moment, but is planned to included later in the project. Data normally reside here for years</p>
+<h2 id="user-roles-in-nels-and-sbi">User roles in NeLS and SBI<a class="headerlink" href="#user-roles-in-nels-and-sbi" title="Permanent link">&para;</a></h2>
+<p>There are multiple user roles to control read/write permissions and to manage project members. These roles are normally set when the project is made by instructions from the PI, but can be changed during the project.</p>
+<table>
+<thead>
+<tr>
+<th align="center">User role</th>
+<th align="center">NeLS</th>
+<th align="center">SBI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">PI</td>
+<td align="center">Manage File system: Add, Rename, Navigate, Download, Delete all Content, Manage members</td>
+<td align="center">Add, Navigate, Transfer to NeLS, Manage members</td>
+</tr>
+<tr>
+<td align="center">Data manager</td>
+<td align="center">Manage File system: Add, Rename, Navigate, Download, Delete all Content, Manage members</td>
+<td align="center">Add, Navigate, Transfer to NeLS, Manage members</td>
+</tr>
+<tr>
+<td align="center">Power user</td>
+<td align="center">Manage File system: Add, Rename, Navigate, Download, Delete all Content</td>
+<td align="center">Add, Navigate, Transfer to NeLS, Manage members</td>
+</tr>
+<tr>
+<td align="center">Normal user</td>
+<td align="center">Add files &amp; folders, Navigate &amp; Download</td>
+<td align="center">Navigate &amp; Transfer to NeLS</td>
+</tr>
+<tr>
+<td align="center">Help desk</td>
+<td align="center">Manage File system: Add, Rename, Navigate, Download, Delete all Content</td>
+<td align="center">Add files &amp; folders, Navigate &amp; Transfer to NeLS</td>
+</tr>
+<tr>
+<td align="center">Core facility</td>
+<td align="center">Add files &amp; folders, Navigate &amp; Download</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Collaborator</td>
+<td align="center">Add files &amp; folders, Navigate &amp; Download</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+<p><br/></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you need support in changing the role of project members, please contact the ELIXIR Norway support desk by sending an email to <a href="mailto:contact@bioinfo.no">contact@bioinfo.no</a></p>
+</div>
+<h2 id="where-to-deposit-data-long-term">Where to deposit data long term<a class="headerlink" href="#where-to-deposit-data-long-term" title="Permanent link">&para;</a></h2>
+<p>When a project is ready for publication, the data should be deposited in public data repositories (deposition databases or data archives) suitable for the type of data. A project can hold different types of data that should be submitted to different data repositories. Many biomolecular data types can be deposited to the <a href="https://elixir-europe.org/platforms/data/elixir-deposition-databases">ELIXIR Deposition Databases</a>.</p>
+<p>ELIXIR Norway is a data broker for the <a href="https://www.ebi.ac.uk/ena/browser/home">European Nucleotide Archive</a> (ENA) and support Norwegian users to submit sequence data there.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you need support in finding the proper end point for your data, please contact the ELIXIR Norway support desk by sending an email to <a href="mailto:contact@bioinfo.no">contact@bioinfo.no</a></p>
+</div>
+<h2 id="import-and-export-galaxy-histories-to-and-from-nels">Import and export Galaxy histories to and from NeLS<a class="headerlink" href="#import-and-export-galaxy-histories-to-and-from-nels" title="Permanent link">&para;</a></h2>
+<p><a href="https://usegalaxy.no/">usegalaxy.no</a> is directly connected to your data storage in <a href="https://nels.bioinfo.no/">NeLS</a>. We have made a function in the <a href="https://usegalaxy.no/">usegalaxy.no</a> that can export a whole history including the data sets in that history as a single compressed file to <a href="https://nels.bioinfo.no/">NeLS</a>. </p>
+<p>This file can be imported into another Galaxy instance and the analysis work can continue there. The advantage of this export is that all provenance data will be kept, meaning all commands, tool versions, database versions, etc that were used prior to the export.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Since usegalaxy.no is not meant for storage we encourage you to move your data when your analysis is done.</p>
+</div>
+<h4 id="before-getting-started">Before getting started<a class="headerlink" href="#before-getting-started" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Login to <a href="https://usegalaxy.no/">https://usegalaxy.no/</a> with your FEIDE or NeLS idp</li>
+<li>You need at least one history in usegalaxy.no to export</li>
+</ul>
+<h4 id="exporting-a-history-from-usegalaxyno-to-nels">Exporting a history from usegalaxy.no to NeLS<a class="headerlink" href="#exporting-a-history-from-usegalaxyno-to-nels" title="Permanent link">&para;</a></h4>
+<p>Dataset and histories can also be exported from usegalaxy.no to your local system. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡If you have several histories, you would need to repeat the steps below for each history you would like to export.</p>
+</div>
+<ul>
+<li>Make sure that the history you want to export is your current (active) history </li>
+<li>Press the <code>History options</code> [1] and select <code>Export History</code> under the <code>NeLS storage</code> section [2]</li>
+<li>You will be redirected to the NeLS portal where you need to choose the destination folder [3] (shown here a random subfolder in the Personal folder)</li>
+<li>Browse to the folder you want to export the history to and press <code>Use current folder</code> [4].</li>
+<li>You should be redirected back to usegalaxy.no where you can view the transfer progress (you might need to scroll down a bit in the usegalaxy.no main window). When the transfer is complete, the progression bar will turn green [5]</li>
+</ul>
+<p><img alt="" src="images/usegalaxy_export1.png" /></p>
+<h4 id="importing-a-history-from-nels-to-usegalaxyno">Importing a history from NeLS to usegalaxy.no<a class="headerlink" href="#importing-a-history-from-nels-to-usegalaxyno" title="Permanent link">&para;</a></h4>
+<p>Both single datasets and complete histories can be imported from your NeLS storage</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>💡When importing data from NeLS, you cannot define the datatype (format). You can change datatype once the datasets are imported into usegalaxy.no</p>
+</div>
+<ul>
+<li>Press the <code>History options</code> and select <code>Import History</code> under the <code>NeLS storage</code> section [1]</li>
+<li>You will be redirected to the NeLS storage. browse to the folder containing the data (example here is a random subfolder in the Project folder), select the history (or file) [2] and press <code>Send to Galaxy</code> [3]
+*You will be redirected back to usegalaxy.no and you can monitor the progress of the import [4]. The progress bar will turn green when the import is complete [5]</li>
+<li>The name of the imported history will be <code>imported from archive: ....</code> The history can be accessed by selecting <code>Histories</code> [6] under the <code>User</code> menu. You can rename the history if you like.</li>
+</ul>
+<p><img alt="" src="images/usegalaxy_import_NeLS_History.png" /></p>
+<h2 id="delete-and-permanent-delete-data-in-usegalaxyno">Delete and permanent delete data in usegalaxy.no<a class="headerlink" href="#delete-and-permanent-delete-data-in-usegalaxyno" title="Permanent link">&para;</a></h2>
+<p>Galaxy offer multiple ways to delete datasets and histories. The are two major types of deletion:</p>
+<ol>
+<li>Delete datasets or histories - This option temporary delete data (basically just hide the data)</li>
+<li>Permanently delete datasets or histories - This option permanently delete data from the disk</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We strongly encourage that you copy your histories to NeLS and permanently delete data from usegalaxy.no when you are done with your data analysis. This will free up your personal disk space in usegalaxy.no. To backup data to NeLS see <a href="user-doc.html#exporting-a-history-from-usegalaxyno-to-nels">this documentation</a></p>
+</div>
+<h3 id="delete-datasets">Delete datasets<a class="headerlink" href="#delete-datasets" title="Permanent link">&para;</a></h3>
+<p>Select the dataset(s) you want to delete (temporary) by pressing <code>X</code> next to the dataset in your <code>History</code> panel [1]. The dataset should disappear from you history, but you still access it [2]</p>
+<p>You have only temporary deleted the data (equal to moving it to the trash bin on you computer), and it can be undeleted (moved back from trash bin), or permanently deleted by pressing <code>Permanently remove it from disk</code> [3]
+Press <code>OK</code> to confirm the permanent deletion [4]</p>
+<p>You can still see traces of the dataset in your history [5], but the data in the file is deleted from the disk and you have freed up disk space</p>
+<p><img alt="" src="images/usegalaxy_delete_data.png" /></p>
+<h3 id="delete-complete-histories">Delete complete histories<a class="headerlink" href="#delete-complete-histories" title="Permanent link">&para;</a></h3>
+<p>Similarly, you can temporary and permanently delete histories. Access the overview of your histories either by selecting <code>Histories</code> [1] under the <code>User</code> menu or by pressing <code>View all histories</code> [2] in the <code>History</code> panel</p>
+<p>From the drop-down menu of the history you want to delete (exemplified by the history named <code>imported from archive: ....</code>), press <code>Delete Permanently</code> [3] for permanent deletion. </p>
+<p>If you chose the other history view, from the drop-down menu of the history you want to delete press <code>Purge</code> [4]. Both options will ask you to confirm the deletion, and both options will erase the data from disk.</p>
+<p><img alt="" src="images/usegalaxy_delete_histories.png" /></p>
+<h2 id="import-and-export-workflows-in-usegalaxyno">Import and export workflows in usegalaxy.no<a class="headerlink" href="#import-and-export-workflows-in-usegalaxyno" title="Permanent link">&para;</a></h2>
+<p>Galaxy offers a simple way to download a workflow as a single file which can be imported into another Galaxy instance and run there. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Different Galaxy instances may have different versions of the same tool installed. This may cause the Galaxy instance you import the workflow into to throw a warning. In order for the imported and exported workflows to give identical results, the tool versions must be identical </p>
+<p>There might be individual tool parameter settings that are pre-set in the exported workflow that for some reason are not carried over properly during the import. In order for the imported and exported workflows to give identical results, the individual tool parameter settings must be identical </p>
+<p>A tool may not be installed in the Galaxy instance you are importing the workflow. In order for the workflow to run, the tool must be installed </p>
+<p>A tool may be dependent on a pre-indexed reference. In order for the workflow to run, the reference must be available </p>
+</div>
+<h3 id="exporting-a-workflow">Exporting a workflow:<a class="headerlink" href="#exporting-a-workflow" title="Permanent link">&para;</a></h3>
+<p>Select the <code>Workflow</code> menu [1]</p>
+<p>A list of the workflows you have created or imported into your user in usegalaxy.no will be displayed</p>
+<p>From the menu that appear by clicking on the name of the workflow you want to export [2], select <code>Download</code> [3] and save the workflow (single .ga file) to your local machine</p>
+<p><img alt="" src="images/usegalaxy_export_workflow.png" /></p>
+<h3 id="importing-a-workflow">Importing a workflow<a class="headerlink" href="#importing-a-workflow" title="Permanent link">&para;</a></h3>
+<p>Select the <code>Workflow</code> menu [1]</p>
+<p>A list of workflows that you have created or imported (if you have any) will be displayed</p>
+<p>Pressing <code>Import</code> [2] and a pop-up window with import options will appear. If you have the workflow stored locally, press <code>Browse</code> [3] and select the .ga file and press <code>Import workflow</code> [4]</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Is is possible to import publicly available workflows directly via the URL</p>
+</div>
+<p>The imported workflow will appear in the list of workflows</p>
+<p><img alt="" src="images/usegalaxy_import_workflow1.png" /></p>
+<p>Different tool versions on exporting and importing Galaxy servers may cause the workflow to throw a warning. Click on the name of the workflow and select the <code>Edit</code> [1] to view potential issues, then press <code>Continue</code> [2]</p>
+<p>You should now be able to run the workflow</p>
+<p><img alt="" src="images/usegalaxy_import_workflow2.png" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>This documentation under <a href="https://github.com/elixir-no-nels/nels-docs/blob/main/LICENSE">Creative Commons Attribution Share Alike 4.0 International</a> license</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/elixir-no-nels/nels-docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
