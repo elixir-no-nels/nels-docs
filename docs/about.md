@@ -53,7 +53,7 @@ All users with FEIDE login credentials can access the NeLS Portal at [https://ne
 
      If you are in doubt whether your University/institution has been connected to the NeLS Portal, please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no). We can support you to get your institution connected to our service.
 
-To access the NeLS portal, see [Accessing NeLS](./user-doc.html#accessing_nels)
+To access the NeLS portal, see [Accessing NeLS](user-doc.html#accessing_nels)
    
 #### I don't have FEIDE login credentials
 Ii is also possible to login to NeLS via a NeLS idp. You can apply for a NeLS idp [here](https://nels.bioinfo.no/idp/module.php/core/loginuserpass.php?AuthState=_e3c298768785fea6fb75e89e2c034c510d25590650%3Ahttps%3A%2F%2Fnels.bioinfo.no%2Fidp%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Durn%253Amace%253Afeide.no%253Aservices%253Ano.bioinfo.nels%26cookieTime%3D1615299111). 
