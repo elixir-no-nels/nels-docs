@@ -20,8 +20,8 @@ Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - N
 * [How to cite us](about.html#how-to-cite-us)
 
 ## About usegalaxy.no
-* [What is usegalaxy.no](./about.html#what-is-usegalaxyno)
-* [Access usegalaxy.no](./about.html#access-usegalaxyno)
+* [What is usegalaxy.no](about.html#what-is-usegalaxyno)
+* [Access usegalaxy.no](about.html#access-usegalaxyno)
 
 ## User Documentation
 * [Accessing NeLS](user-doc.html#accessing-nels)
