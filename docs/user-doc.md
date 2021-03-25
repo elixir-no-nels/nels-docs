@@ -57,7 +57,7 @@ Here is a screenshot of the Personal Area in the NeLS portal. The numbered block
 
 ### Upload/Download using dedicated programs (FileZilla setup)
 
-Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. 
+Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. Instructions on how to gather these pieces of information are written in section [Collect connection details from the NeLS portal](user-doc.html#collect-connection-details-from-the-nels-portal).
 
 When using FileZilla, select `File` from the top menu and open `Site Manager...`. Click on the `New Site` button and call the new site `NeLS`. Perform the following changes to the form:
 
