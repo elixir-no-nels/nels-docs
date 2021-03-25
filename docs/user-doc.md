@@ -25,13 +25,11 @@ For quick browsing and simple file access you can log into [NeLS](https://nels.b
 
      In order to access NeLS through a command line, you need to collect some connection details from the NeLS portal. See [this](user-doc.html#collect-connection-details-from-the-nels-portal) section for how to download a private SSH key.
 
-After gathering your username and SSH key, you can use `ssh` to access NeLS with the following command:
+After gathering your username and SSH key, you can use `ssh` to access NeLS with the following command (character `$` only indicates beginning of the line and is not a part of the command):
 
-```
-ssh -i <SSH_key> <username>@nelstor0.cbu.uib.no
-```
+	$ ssh -i <SSH_key> <username>@nelstor0.cbu.uib.no
 
-Absolute path to the home directory is `/elixir-chr/nels/users/<username>`.
+Absolute path to the home directory in NeLS is `/elixir-chr/nels/users/<username>`.
 
 ## Collect connection details from the NeLS portal 
 
@@ -61,14 +59,18 @@ Here is a screenshot of the Personal Area in the NeLS portal. The numbered block
 
 Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. 
 
-When using FileZilla, select `File` from the top menu and open `Site Manager...`. Click on the `New Site` button and call the new site `NeLS`.
+When using FileZilla, select `File` from the top menu and open `Site Manager...`. Click on the `New Site` button and call the new site `NeLS`. Perform the following changes to the form:
 
-Perform the following changes to the form:
-   1. Change `Protocol` to `SFTP - SSH File Transfer Protocol`.
-   2. Fill in `Host` from the NeLS Connection Details.
-   3. Change `Logon Type` to `Key File`.
-   4. Fill in `Username` from the NeLS Connection Details.
-   5. Browse for the Key File, allow all file types to show in the pop-up window and select the SSH Key File downloaded from the NeLS portal.
+1. Change `Protocol` to `SFTP - SSH File Transfer Protocol`.
+
+2. Fill in `Host` from the NeLS Connection Details.
+
+3. Change `Logon Type` to `Key File`.
+
+4. Fill in `Username` from the NeLS Connection Details.
+
+5. Browse for the Key File, allow all file types to show in the pop-up window and select the SSH Key File downloaded from the NeLS portal.
+
 
 The Site Manager Form will at the end look similar to the screenshot below with [1], [2], and [3] highlighting the filled in connection details. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied. When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
 
@@ -84,47 +86,41 @@ Here is a list of several examples of how to upload files and folders to NeLS us
 
 
 1. Upload a file into the `Personal` folder:
-	```
-	$ scp -i <SSH_key> \
-	>  <file> \
-	>  <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
-	```
+
+		$ scp -i <SSH_key> \
+		>  <file> \
+		>  <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
 
 2. Upload a file into a project folder:
-	```
-	$ scp -i <SSH_key> \
-	> <file> \
-	> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
-	```
+
+		$ scp -i <SSH_key> \
+		> <file> \
+		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
 
 3. Upload a folder (recursive upload, `-r` option):
-	```
-	$ scp -r -i <SSH_key> \
-	> <folder> \
-	> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
-	```
+
+		$ scp -r -i <SSH_key> \
+		> <folder> \
+		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
 
 4. Download a file from the `Personal` folder:
-	```
-	$ scp -i <SSH_key> \
-	> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/<file> \
-	> <destination_local>
-	```
+
+		$ scp -i <SSH_key> \
+		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/<file> \
+		> <destination_local>
 
 5. Download all files with extension `.txt` from the `Personal` folder (wildcard usage):
-	```
-	$ scp -i <SSH_key> \
-	> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/*.txt \
-	> <destination_local>
-	```
+
+		$ scp -i <SSH_key> \
+		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/*.txt \
+		> <destination_local>
 
 6. Download a folder from a project folder (recursive download, `-r` option):
-	```
-	$ scp -r -i <SSH_key> \
-	> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
-	> <destination_local>
-	```
-	
+
+		$ scp -r -i <SSH_key> \
+		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
+		> <destination_local>
+
 ## Transfer data to and from SBI
 SBI is only connected to NeLS. Data has to reside in NeLS before it can be imported in SBI, and data in SBI can only be exported to NeLS. You need to be member of a SBI project before you can transfer data between NeLS and SBI 
 
