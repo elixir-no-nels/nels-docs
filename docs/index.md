@@ -25,7 +25,7 @@ Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - N
 
 ## User Documentation
 * [Accessing NeLS](user-doc.html#accessing-nels)
-* [Download private SSH key](user-doc.html#download-private-ssh-key)
+* [Collect connection details from the NeLS portal](user-doc.html#collect-connection-details-from-the-nels-portal)
 * [Transfer data to and from NeLS](user-doc.html#transfer-data-to-and-from-nels)
 * [Transfer data to and from SBI](user-doc.html#transfer-data-to-and-from-sbi)
 * [User roles in NeLS and SBI](user-doc.html#user-roles-in-nels-and-sbi)
