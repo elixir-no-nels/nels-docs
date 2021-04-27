@@ -121,6 +121,15 @@ Here is a list of several examples of how to upload files and folders to NeLS us
 		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
 		> <destination_local>
 
+### Import data from e.g. filesender
+You can import data to NeLS from other systems which are accesible under an URL. Here is an example for the uninett filesender service.
+Upload files to https://filesender.uninett.no or create a voucher for your collaborator to upload data. Copy the download link for the zip archive of all files, once they are uploaded. [Log in to NeLS via ssh](### Using `ssh` through command Line).
+
+Import the data to NeLS with:
+
+		$ wget -O tmp.zip "FILESENDER_ZIP_DOWNLOAD_LINK" && unzip tmp.zip && rm tmp.zip
+
+
 ## Transfer data to and from SBI
 SBI is only connected to NeLS. Data has to reside in NeLS before it can be imported in SBI, and data in SBI can only be exported to NeLS. You need to be member of a SBI project before you can transfer data between NeLS and SBI 
 
