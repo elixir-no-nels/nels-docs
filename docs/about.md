@@ -42,7 +42,7 @@ The architecture of NeLS has a tiered structure, with three natural layers that 
 NeLS is accessible to all Norwegian researchers and international research collaborators of their projects.
 
 #### What type of data can be stored in NeLS?
-NeLS is for storage of non-sensitive Life science data. 
+NeLS is for storage of non-sensitive Life Science data. Please consult the [Terms Of Use](https://nels.bioinfo.no/pages/user-terms.xhtml).
 
 Sensitive data must be stored using other platforms that allows collection, storage and analysis of sensitive research data in a secure environment, such as [TSD](https://www.uio.no/english/services/it/research/sensitive-data/index.html) or the [HUNT Cloud](https://www.ntnu.edu/mh/huntcloud)" 
 
