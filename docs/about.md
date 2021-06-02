@@ -67,6 +67,9 @@ If you have access to NeLS, you also gain access to SBI, given that you are part
 
 ## Storage quota in SBI
 #### Who can get storage quotas in SBI?
+
+![](images/NeLS-SBI-application.png)
+
 All research projects with a Norwegian partner with funding from national funding bodies (NFR, Universities, Helseforetak, etc) and EU grants are entitled to store life science data in NeLS. This also includes private companies and governmental research institutions.
 
 Research projects (with a Norwegian partner) that do not fall into the definition above can still apply for a storage quota, but these projects will be treated according to the user contribution model for granting storage to projects by Sigma2.
@@ -88,7 +91,7 @@ If your data is generated elsewhere, you can contact <a href="mailto:contact@bio
 
 	This part of the page is still under construction
 
-## How safe and secure are data in NeLS?
+## How safe and secure are data in NeLS
 The NeLS storage layer has built-in redundancy against data loss due to hardware failure at disk and server levels. 
 
 The StoreBioinfo storage layer is implemented on top of the national research data storage solution [NIRD](https://documentation.sigma2.no/files_storage/backup.html), offered by [Sigma2 Uninett A/S](https://www.sigma2.no/). This large capacity, mid term data storage layer is protected against data loss by both hardware redundancy mechanisms and asynchronous geo-replicated storage between two cities in Norway. In addition NIRD implements daily snapshots for the last 7 days and weekly snapshots for the last 6 weeks.
@@ -112,6 +115,26 @@ If you have access to NeLS, you also have access to usegalaxy.no
 !!! info
 
 	For usegalaxy.no user support please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
+
+## Further resources
+
+#### ELIXIR Norway Data Stewardship Wizard
+The Data Stewardship Wizard is an international project to help serious researchers and data stewards with building smart Data Management Plans (DMPs) for FAIR Open Science. 
+
+ELIXIR Norway offer a dedicated [Data Stewardship Wizard instance](https://elixir-no.ds-wizard.org/) for life scientists in Norway with tailored guidance. You can use you FEIDE user to log in (given that your [FEIDE user is linked to ELIXIR AAI](https://elixir-europe.org/register) or you can sign up using your email address.
+
+Contact our helpdesk at [contact@bioinfo.no](mailto:contact@bioinfo.no) if you need support.
+
+#### ELIXIR Research Data Management Kit
+[The ELIXIR Research Data Management Kit (RDMkit)](https://rdmkit.elixir-europe.org/) is an online guide containing good data management practices applicable to research projects from the beginning to the end. 
+
+ELIXIR NORWAY is contributing to develop and maintain RDMkit as part of the CONVERGE project.
+
+The RDMkit has guidelines, information, and pointers to help you with problems throughout the data’s life cycle. RDMkit supports FAIR data — Findable, Accessible, Interoperable and Reusable — by-design, from the first steps of data management planning to the final steps of depositing data in public archives. 
+
+!!! warning
+
+	This part of the page is still under construction
 
 
 ## How to cite us

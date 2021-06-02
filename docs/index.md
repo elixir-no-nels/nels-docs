@@ -16,12 +16,15 @@ Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - N
 * [Access to SBI](about.html#access-to-sbi)
 * [Storage quota in SBI](about.html#storage-quota-in-sbi)
 * Terminology
-* How safe and secure are data in NeLS?
+* [How safe and secure are data in NeLS](about.html#how-safe-and-secure-are-data-in-nels)
 * [How to cite us](about.html#how-to-cite-us)
 
 ## About usegalaxy.no
 * [What is usegalaxy.no](about.html#what-is-usegalaxyno)
 * [Access usegalaxy.no](about.html#access-usegalaxyno)
+
+## Further resources
+* [ELIXIR Norway Data Stewardship Wizard](about.html#elixir-norway-data-stewardship-wizard)
 
 ## User Documentation
 * [Accessing NeLS](user-doc.html#accessing-nels)
