@@ -1,6 +1,6 @@
 # ELIXIR Norway Documentation
 
-[ELIXIR Norway](https://elixir.no) provides services and training for supporting life science research to efficiently and safely store, share, analyse and publish their data.
+[ELIXIR Norway](https://elixir.no) provides services and training, to support Life Science researchers to efficiently and safely store, share, analyse and publish their data.
 
 Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.bioinfo.no/).
 
