@@ -123,7 +123,9 @@ The Data Stewardship Wizard is an international project to help serious research
 
 ELIXIR Norway offer a dedicated [Data Stewardship Wizard instance](https://elixir-no.ds-wizard.org/) for life scientists in Norway with tailored guidance. You can use you FEIDE user to log in (given that your [FEIDE user is linked to ELIXIR AAI](https://elixir-europe.org/register) or you can sign up using your email address.
 
-Contact our helpdesk at [contact@bioinfo.no](mailto:contact@bioinfo.no) if you need support.
+You can find more information on the Data Stewardship Wizard in the [DSW user guide](https://guide.ds-wizard.org/).
+
+Contact our helpdesk at [contact@bioinfo.no](mailto:contact@bioinfo.no) if you need support. 
 
 #### ELIXIR Research Data Management Kit
 [The ELIXIR Research Data Management Kit (RDMkit)](https://rdmkit.elixir-europe.org/) is an online guide containing good data management practices applicable to research projects from the beginning to the end. 
