@@ -168,7 +168,12 @@ Please cite our [F1000Research publication on NeLS](https://doi.org/10.12688/f10
 
 #### Please also refer to us in your acknowledgement
 
-##### If the project was supported 2017 - 2021 please add:
+
+##### If the project was supported after April 2022 please add:
+
+“..............received [bioinformatic/data management/infrastructure] support from ELIXIR Norway, supported by the Research Council of Norway’s grant 322392, the University of Bergen, the University of Oslo, the Arctic University of Norway in Tromsø, the Norwegian University of Science and Technology and the Norwegian University of Life Sciences: NMBU”
+
+##### If the project was supported 2017 - March 2022 please add:
 
 “..............received [bioinformatic/data management/infrastructure] support from ELIXIR Norway, supported by the Research Council of Norway’s grant 270068, the University of Bergen, the University of Oslo, the Arctic University of Norway in Tromsø, the Norwegian University of Science and Technology and the Norwegian University of Life Sciences: NMBU”
 
@@ -178,7 +183,7 @@ Please cite our [F1000Research publication on NeLS](https://doi.org/10.12688/f10
 
 ##### If the project was supported by BioMedData please add:
 
-“..............received data management support from ELIXIR Norway, supported by the Research Council of Norway’s grant 295932”
+“..............received data management support from BioMedData and ELIXIR Norway, supported by the Research Council of Norway’s grant 295932”
 
 ##### If the project used the NeLS and SBI infrastructure to store data:
 
