@@ -3,7 +3,7 @@
 ## NeLS - SEEK integration
 NeLS can be integrated with [SEEK](https://seek4science.org/) to keep track of metadata.
 
-To allow linking project in NeLS and in a SEEK instance (such as the public [FAIRDOMHub](https://fairdomhub.org/)) this has to be enabled by admins on both sides contact the <a href="mailto:contact@bioinfo.no?subject=NeLS-SEEK integration">ELIXIR-NO Helpdesk</a> and an admin of your SEEK instance for this.
+To allow linking project in NeLS and in a SEEK instance (such as the public [FAIRDOMHub](https://fairdomhub.org/)) this has to be enabled by admins on both sides contact the <a href="mailto:support@elxir.no?subject=NeLS-SEEK integration">ELIXIR-NO Helpdesk</a> and an admin of your SEEK instance for this.
 
 You can login to [FAIRDOMHub](https://fairdomhub.org/) with your FEIDE ID:
 
