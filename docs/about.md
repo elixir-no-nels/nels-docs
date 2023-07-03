@@ -14,7 +14,7 @@ ELIXIR Norway provide service, infrastructure, support and training for life sci
 
 !!! info
 
-	ELIXIR Norway support desk can be contacted directly by sending an email to [support@elxir.no](mailto:support@elxir.no?subject=NeLS)
+	ELIXIR Norway support desk can be contacted directly by sending an email to [support@elixir.no](mailto:support@elixir.no?subject=NeLS)
 
 ## What is NeLS and SBI
 
@@ -22,7 +22,7 @@ ELIXIR Norway provide service, infrastructure, support and training for life sci
 
 The Norwegian e-Infrastructure for Life Sciences [(NeLS)](https://nels.bioinfo.no/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
 
-StoreBioInfo (SBI) is for long term storage of project data. A storage quota in this layer is granted upon a successful application to [ELIXIR Norway support desk](mailto:support@elxir.no?subject=NeLS)
+StoreBioInfo (SBI) is for long term storage of project data. A storage quota in this layer is granted upon a successful application to [ELIXIR Norway support desk](mailto:support@elixir.no?subject=NeLS)
 
 The architecture of NeLS has a tiered structure, with three natural layers that data can reside in. These are the compute layer ([usegalaxy.no](https://usegalaxy.no/)), the NeLS storage layer, and the StoreBioinfo layer. All three serve different purposes in terms of usage: from small capacity, very short term immediate storage with fast access available to compute resources, to large capacity, long term storage, with less flexible access methods and longer access time. 
 	
@@ -51,7 +51,7 @@ All users with FEIDE login credentials can access the NeLS Portal at [https://ne
 
 !!! tip
 
-     If you are in doubt whether your University/institution has been connected to the NeLS Portal, please contact the ELIXIR Norway support desk by sending an email to [support@elxir.no](mailto:support@elxir.no?subject=NeLS). We can support you to get your institution connected to our service.
+     If you are in doubt whether your University/institution has been connected to the NeLS Portal, please contact the ELIXIR Norway support desk by sending an email to [support@elixir.no](mailto:support@elixir.no?subject=NeLS). We can support you to get your institution connected to our service.
 
 To access the NeLS portal, see [Accessing NeLS](user-doc.html#accessing_nels)
    
@@ -79,7 +79,7 @@ Research projects (with a Norwegian partner) that do not fall into the definitio
 
 If your data is generated at one of the Norwegian sequencing core facilities organized in NorSeq, your core facility can help you with the application and directly upload the data to your NeLS project.
 
-If your data is generated elsewhere, you can contact <a href="mailto:support@elxir.no?subject=NeLS quota">ELIXIR-NO Helpdesk</a> directly and apply for a storage quota in SBI.
+If your data is generated elsewhere, you can contact <a href="mailto:support@elixir.no?subject=NeLS quota">ELIXIR-NO Helpdesk</a> directly and apply for a storage quota in SBI.
 
 
 ## Terminology
@@ -111,7 +111,7 @@ If you have access to NeLS, you also have access to usegalaxy.no
 
 !!! info
 
-	For usegalaxy.no user support please contact the ELIXIR Norway support desk by sending an email to [support@elxir.no ](mailto:support@elxir.no?subject=Galaxy)
+	For usegalaxy.no user support please contact the ELIXIR Norway support desk by sending an email to [support@elixir.no ](mailto:support@elixir.no?subject=Galaxy)
 
 ## Further resources
 
@@ -122,7 +122,7 @@ ELIXIR Norway offer a dedicated [Data Stewardship Wizard instance](https://elixi
 
 You can find more information on the Data Stewardship Wizard in the [DSW user guide](https://guide.ds-wizard.org/).
 
-Contact our helpdesk at [support@elxir.no](mailto:support@elxir.no?subject=DSW) if you need support. 
+Contact our helpdesk at [support@elixir.no](mailto:support@elixir.no?subject=DSW) if you need support. 
 
 #### ELIXIR Research Data Management Kit
 [The ELIXIR Research Data Management Kit (RDMkit)](https://rdmkit.elixir-europe.org/) is an online guide containing good data management practices applicable to research projects from the beginning to the end. 
