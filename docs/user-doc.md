@@ -205,7 +205,7 @@ There are multiple user roles to control read/write permissions and to manage pr
 
 !!! note
 
-	If you need support in changing the role of project members, please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
+	If you need support in changing the role of project members, please contact the ELIXIR Norway support desk by sending an email to [support@elxir.no ](mailto:support@elxir.no?subject=NeLS)
 
 ## Where to deposit data long term
 When a project is ready for publication, the data should be deposited in public data repositories (deposition databases or data archives) suitable for the type of data. A project can hold different types of data that should be submitted to different data repositories. Many biomolecular data types can be deposited to the [ELIXIR Deposition Databases](https://elixir-europe.org/platforms/data/elixir-deposition-databases).
@@ -214,7 +214,7 @@ ELIXIR Norway is a data broker for the [European Nucleotide Archive](https://www
 
 !!! note
 
-	If you need support in finding the proper end point for your data, please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
+	If you need support in finding the proper end point for your data, please contact the ELIXIR Norway support desk by sending an email to [support@elxir.no ](mailto:support@elxir.no?subject=RDM)
 
 ## Import and export Galaxy histories to and from NeLS
 [usegalaxy.no](https://usegalaxy.no/) is directly connected to your data storage in [NeLS](https://nels.bioinfo.no/). We have made a function in the [usegalaxy.no](https://usegalaxy.no/) that can export a whole history including the data sets in that history as a single compressed file to [NeLS](https://nels.bioinfo.no/). 
