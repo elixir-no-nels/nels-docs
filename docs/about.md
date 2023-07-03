@@ -14,7 +14,7 @@ ELIXIR Norway provide service, infrastructure, support and training for life sci
 
 !!! info
 
-	ELIXIR Norway support desk can be contacted directly by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
+	ELIXIR Norway support desk can be contacted directly by sending an email to [support@elxir.no](mailto:support@elxir.no?subject=NeLS)
 
 ## What is NeLS and SBI
 
@@ -22,7 +22,7 @@ ELIXIR Norway provide service, infrastructure, support and training for life sci
 
 The Norwegian e-Infrastructure for Life Sciences [(NeLS)](https://nels.bioinfo.no/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
 
-StoreBioInfo (SBI) is for long term storage of project data. A storage quota in this layer is granted upon a successful application to [ELIXIR Norway support desk](mailto:contact@bioinfo.no)
+StoreBioInfo (SBI) is for long term storage of project data. A storage quota in this layer is granted upon a successful application to [ELIXIR Norway support desk](mailto:support@elxir.no?subject=NeLS)
 
 The architecture of NeLS has a tiered structure, with three natural layers that data can reside in. These are the compute layer ([usegalaxy.no](https://usegalaxy.no/)), the NeLS storage layer, and the StoreBioinfo layer. All three serve different purposes in terms of usage: from small capacity, very short term immediate storage with fast access available to compute resources, to large capacity, long term storage, with less flexible access methods and longer access time. 
 	
@@ -42,16 +42,16 @@ The architecture of NeLS has a tiered structure, with three natural layers that 
 NeLS is accessible to all Norwegian researchers and international research collaborators of their projects.
 
 #### What type of data can be stored in NeLS?
-NeLS is for storage of non-sensitive Life Science data. Please consult the [Terms Of Use](https://nels.bioinfo.no/pages/user-terms.xhtml).
+NeLS is for storage of non-sensitive Life Science data. Please consult the [Terms Of Use](https://nels./pages/user-terms.xhtml).
 
 Sensitive data must be stored using other platforms that allows collection, storage and analysis of sensitive research data in a secure environment, such as [TSD](https://www.uio.no/english/services/it/research/sensitive-data/index.html) or the [HUNT Cloud](https://www.ntnu.edu/mh/huntcloud)" 
 
 #### How to obtain access to NeLS
-All users with FEIDE login credentials can access the NeLS Portal at [https://nels.bioinfo.no/](https://nels.bioinfo.no/). Only prerequisite is that your University/institution need to allow their users to use FEIDE to connect to the NeLS Portal. 
+All users with FEIDE login credentials can access the NeLS Portal at [https://nels./](https://nels./). Only prerequisite is that your University/institution need to allow their users to use FEIDE to connect to the NeLS Portal. 
 
 !!! tip
 
-     If you are in doubt whether your University/institution has been connected to the NeLS Portal, please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no). We can support you to get your institution connected to our service.
+     If you are in doubt whether your University/institution has been connected to the NeLS Portal, please contact the ELIXIR Norway support desk by sending an email to [support@elxir.no](mailto:support@elxir.no?subject=NeLS). We can support you to get your institution connected to our service.
 
 To access the NeLS portal, see [Accessing NeLS](user-doc.html#accessing_nels)
    
@@ -74,15 +74,12 @@ All research projects with a Norwegian partner with funding from national fundin
 
 Research projects (with a Norwegian partner) that do not fall into the definition above can still apply for a storage quota, but these projects will be treated according to the user contribution model for granting storage to projects by Sigma2.
 
-!!! info
-
-	We currently offer free storage of data up to 10 TB. For larger projects, please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no).
 
 #### How can I get a storage quota in SBI?
 
 If your data is generated at one of the Norwegian sequencing core facilities organized in NorSeq, your core facility can help you with the application and directly upload the data to your NeLS project.
 
-If your data is generated elsewhere, you can contact <a href="mailto:contact@bioinfo.no?subject=NeLS-SEEK quota">ELIXIR-NO Helpdesk</a> directly and apply for a storage quota in SBI.
+If your data is generated elsewhere, you can contact <a href="mailto:support@elxir.no?subject=NeLS quota">ELIXIR-NO Helpdesk</a> directly and apply for a storage quota in SBI.
 
 
 ## Terminology
@@ -114,7 +111,7 @@ If you have access to NeLS, you also have access to usegalaxy.no
 
 !!! info
 
-	For usegalaxy.no user support please contact the ELIXIR Norway support desk by sending an email to [contact@bioinfo.no](mailto:contact@bioinfo.no)
+	For usegalaxy.no user support please contact the ELIXIR Norway support desk by sending an email to [support@elxir.no ](mailto:support@elxir.no?subject=Galaxy)
 
 ## Further resources
 
@@ -125,7 +122,7 @@ ELIXIR Norway offer a dedicated [Data Stewardship Wizard instance](https://elixi
 
 You can find more information on the Data Stewardship Wizard in the [DSW user guide](https://guide.ds-wizard.org/).
 
-Contact our helpdesk at [contact@bioinfo.no](mailto:contact@bioinfo.no) if you need support. 
+Contact our helpdesk at [support@elxir.no](mailto:support@elxir.no?subject=DSW) if you need support. 
 
 #### ELIXIR Research Data Management Kit
 [The ELIXIR Research Data Management Kit (RDMkit)](https://rdmkit.elixir-europe.org/) is an online guide containing good data management practices applicable to research projects from the beginning to the end. 
