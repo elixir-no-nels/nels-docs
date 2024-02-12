@@ -20,7 +20,7 @@ ELIXIR Norway provide service, infrastructure, support and training for life sci
 
 ![](images/nels-logo-300.png)
 
-The Norwegian e-Infrastructure for Life Sciences [(NeLS)](https://nels.bioinfo.no/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
+The Norwegian e-Infrastructure for Life Sciences [(NeLS)](https://nels.bioinfo.no/nels-web/#/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
 
 StoreBioInfo (SBI) is for long term storage of project data. A storage quota in this layer is granted upon a successful application to [ELIXIR Norway support desk](mailto:support@elixir.no?subject=NeLS)
 
@@ -47,7 +47,7 @@ NeLS is for storage of non-sensitive Life Science data. Please consult the [Term
 Sensitive data must be stored using other platforms that allows collection, storage and analysis of sensitive research data in a secure environment, such as [TSD](https://www.uio.no/english/services/it/research/sensitive-data/index.html) or the [HUNT Cloud](https://www.ntnu.edu/mh/huntcloud)" 
 
 #### How to obtain access to NeLS
-All users with FEIDE login credentials can access the NeLS Portal at [https://nels./](https://nels./). Only prerequisite is that your University/institution need to allow their users to use FEIDE to connect to the NeLS Portal. 
+All users with FEIDE login credentials can access the NeLS Portal at [https://nels.bioinfo.no/nels-web/#/](https://nels.bioinfo.no/nels-web/#/). Only prerequisite is that your University/institution need to allow their users to use FEIDE to connect to the NeLS Portal. 
 
 !!! tip
 
