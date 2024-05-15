@@ -184,8 +184,8 @@ Please cite our [F1000Research publication on NeLS](https://doi.org/10.12688/f10
 
 ##### If the project used the NeLS and SBI infrastructure to store data:
 
-“..............used the NeLS and SBI portal provided by ELIXIR Norway, supported by the Research Council of Norway’s grant [270068|208481] for safe storage and sharing of data.”
+“..............used the NeLS and SBI portal provided by ELIXIR Norway, supported by the Research Council of Norway’s grant [270068|208481|322392] for safe storage and sharing of data.”
 
 ##### If the project used the usegalaxy.no to analyse data:
 
-“..............used usegalaxy.no provided by ELIXIR Norway, supported by the Research Council of Norway’s grant 270068 for data analysis.”
+“..............used usegalaxy.no provided by ELIXIR Norway, supported by the Research Council of Norway’s grant [270068|208481|322392] for data analysis.”
