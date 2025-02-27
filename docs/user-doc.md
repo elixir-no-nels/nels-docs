@@ -27,7 +27,7 @@ For quick browsing and simple file access you can log into [NeLS](https://nels.b
 
 After gathering your username and SSH key, you can use `ssh` to access NeLS with the following command (character `$` only indicates beginning of the line and is not a part of the command):
 
-	$ ssh -i <SSH_key> <username>@nelstor0.cbu.uib.no
+	$ ssh -i <SSH_key> <username>@newstor.cbu.uib.no
 
 Absolute path to the home directory in NeLS is `/elixir-chr/nels/users/<username>`.
 
@@ -39,7 +39,7 @@ Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with pro
 <img src="images/nels_access.png" alt="NeLS Connection Details" width="600"/>
 </p>
 
-Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`nelstor0.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
+Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`newstor.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
 
 ## Transfer data to and from NeLS
 
@@ -89,36 +89,36 @@ Here is a list of several examples of how to upload files and folders to NeLS us
 
 		$ scp -i <SSH_key> \
 		>  <file> \
-		>  <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+		>  <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
 
 2. Upload a file into a project folder:
 
 		$ scp -i <SSH_key> \
 		> <file> \
-		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
+		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
 
 3. Upload a folder (recursive upload, `-r` option):
 
 		$ scp -r -i <SSH_key> \
 		> <folder> \
-		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
 
 4. Download a file from the `Personal` folder:
 
 		$ scp -i <SSH_key> \
-		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/<file> \
+		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/<file> \
 		> <destination_local>
 
 5. Download all files with extension `.txt` from the `Personal` folder (wildcard usage):
 
 		$ scp -i <SSH_key> \
-		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/*.txt \
+		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/*.txt \
 		> <destination_local>
 
 6. Download a folder from a project folder (recursive download, `-r` option):
 
 		$ scp -r -i <SSH_key> \
-		> <username>@nelstor0.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
+		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
 		> <destination_local>
 
 ### Import data from e.g. filesender
