@@ -13,7 +13,7 @@ There are two ways you can access data on NeLS:
 * Using `ssh` through command line
 
 ### Via the NeLS portal
-For quick browsing and simple file access you can log into [NeLS](https://nels.bioinfo.no/) using either their FEIDE identity if you are a member of a Norewegian institution or a NeLS identity which can be requested by contacting the ELIXIR support desk (See [I don't have FEIDE login credentials](about.html#i-dont-have-feide-login-credentials)).
+For quick browsing and simple file access you can log into [NeLS](https://nels.elixir.no/) using either their FEIDE identity if you are a member of a Norewegian institution or a NeLS identity which can be requested by contacting the ELIXIR support desk (See [I don't have FEIDE login credentials](about.html#i-dont-have-feide-login-credentials)).
 
 !!! info
 
@@ -29,7 +29,7 @@ After gathering your username and SSH key, you can use `ssh` to access NeLS with
 
 	$ ssh -i <SSH_key> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" <username>@data.nels.elixir.no 
 
-Absolute path to the home directory in NeLS is `/elixir-chr/nels/users/<username>`.
+Absolute path to the home directory in NeLS is `/nels/users/<username>`.
 
 ## Collect connection details from the NeLS portal 
 
@@ -45,7 +45,7 @@ Download the SSH key to the computer from which you want to authenticate on NeLS
 
 ### Upload/Download data using the Web interface of the NeLS portal
 
-For quick browsing and simple file access a user can log into NeLS at https://nels.bioinfo.no/ using either their FEiDE identity if they are a member of a Norewegian institution or a NeLS identity which can be created by members of the Elixir Helpdesk with access to the NelS admin tools.
+For quick browsing and simple file access a user can log into NeLS at https://nels.elixir.no/ using either their FEiDE identity if they are a member of a Norewegian institution or a NeLS identity which can be created by members of the Elixir Helpdesk with access to the NelS admin tools.
 
 This access option is used when data needs to be backed up from NeLS to SBI, for details see section [Midterm data storage in NeLS and SBI](user-doc.html#midterm-data-storage-in-nels-and-sbi).
 
@@ -88,37 +88,40 @@ Here is a list of several examples of how to upload files and folders to NeLS us
 1. Upload a file into the `Personal` folder:
 
 		$ scp -i <SSH_key> \
-		>  <file> \
-		>  <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+		> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" \
+   		> <file-to-send-to-nels> <username>@data.nels.elixir.no:Personal/
 
-2. Upload a file into a project folder:
+3. Upload a file into a project folder:
 
 		$ scp -i <SSH_key> \
-		> <file> \
-		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>
+		> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" \
+   		> <file-to-send-to-nels> <username>@data.nels.elixir.no:Projects/<projectname>/
 
-3. Upload a folder (recursive upload, `-r` option):
+5. Upload a folder (recursive upload, `-r` option):
 
 		$ scp -r -i <SSH_key> \
-		> <folder> \
-		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+		> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" \
+   		> file-to-send-to-nels <username>@data.nels.elixir.no:Personal/
 
-4. Download a file from the `Personal` folder:
-
-		$ scp -i <SSH_key> \
-		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/<file> \
-		> <destination_local>
-
-5. Download all files with extension `.txt` from the `Personal` folder (wildcard usage):
+6. Download a file from the `Personal` folder:
 
 		$ scp -i <SSH_key> \
-		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal/*.txt \
+		> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" \
+   		> <username>@data.nels.elixir.no:Personal/<file> \
 		> <destination_local>
 
-6. Download a folder from a project folder (recursive download, `-r` option):
+8. Download all files with extension `.txt` from the `Personal` folder (wildcard usage):
+   
+		$ scp -i <SSH_key> \
+		> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" \
+   		> <username>@data.nels.elixir.no:Personal/*.txt \
+		> <destination_local>
 
+10. Download a folder from a project folder (recursive download, `-r` option):
+		
 		$ scp -r -i <SSH_key> \
-		> <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Projects/<project>/<folder> \
+		> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" \
+   		> <username>@data.nels.elixir.no:Projects/<projectname>/<folder>
 		> <destination_local>
 
 ### Import data from e.g. filesender
@@ -138,7 +141,7 @@ SBI is only connected to NeLS. Data has to reside in NeLS before it can be impor
 	The only way to transfer data between NeLS and SBI is through the NeLS Portal web GUI. Data
 
 #### Importing data in SBI
-You will find all SBI projects you are a member of under the `StoreBioInfo` menu in the [NeLS Portal](https://nels.bioinfo.no/). You will see both your NeLS projects [1] (Personal and Projects) to the left of the screen and the SBI projects to the right [2].
+You will find all SBI projects you are a member of under the `StoreBioInfo` menu in the [NeLS Portal](https://nels.elixir.no/). You will see both your NeLS projects [1] (Personal and Projects) to the left of the screen and the SBI projects to the right [2].
 
 Select the SBI project you would like to import data in. There might already exist datasets in the project [3], or you can [create a new dataset](user-doc.html#create-new-dataset-in-sbi) for new datasets.
 
@@ -217,7 +220,7 @@ ELIXIR Norway is a data broker for the [European Nucleotide Archive](https://www
 	If you need support in finding the proper end point for your data, please contact the ELIXIR Norway support desk by sending an email to [support@elxir.no ](mailto:support@elxir.no?subject=RDM)
 
 ## Import and export Galaxy histories to and from NeLS
-[usegalaxy.no](https://usegalaxy.no/) is directly connected to your data storage in [NeLS](https://nels.bioinfo.no/). We have made a function in the [usegalaxy.no](https://usegalaxy.no/) that can export a whole history including the data sets in that history as a single compressed file to [NeLS](https://nels.bioinfo.no/). 
+[usegalaxy.no](https://usegalaxy.no/) is directly connected to your data storage in [NeLS](https://nels.elixir.no/). We have made a function in the [usegalaxy.no](https://usegalaxy.no/) that can export a whole history including the data sets in that history as a single compressed file to [NeLS](https://nels.elixir.no/). 
 
 This file can be imported into another Galaxy instance and the analysis work can continue there. The advantage of this export is that all provenance data will be kept, meaning all commands, tool versions, database versions, etc that were used prior to the export.
 
