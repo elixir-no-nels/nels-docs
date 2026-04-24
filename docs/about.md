@@ -63,8 +63,9 @@ Ii is also possible to login to NeLS via a NeLS idp. You can apply for a NeLS id
      NeLS ipd are generted only for users that apply with an institutional email address (your email at your institution) and not to e.g. gmail addresses
 
 ## Creating a Project in NeLS and Access to SBI
-When you have access to NeLS, please contact [ELIXIR Norway support desk](mailto:support@elixir.no?subject=New NeLS project) to obtain a collaborative project space and gain access to SBI.
-Alternatively you can also [submit your DMP](integrations.html#data-stewardship-wizard) from our DSW instance for automatic project creation.
+We recommend you to [submit your DMP](integrations.html#data-stewardship-wizard) from our DSW instance for automatic project creation.
+
+Altenatively When you have access to NeLS, please contact [ELIXIR Norway support desk](mailto:support@elixir.no?subject=New NeLS project) and attach the [project request form](https://github.com/elixir-no-nels/nels-docs/blob/main/docs/files/ELIXIR_Norway_StorageRequestForm_rev2024.xlsx) to obtain a collaborative project space and gain access to SBI.
 
 ## Storage quota in SBI
 #### Who can get storage quotas in SBI?
