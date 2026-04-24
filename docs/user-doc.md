@@ -39,7 +39,7 @@ Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with pro
 <img src="images/NeLS_Access_2026.png" alt="NeLS Connection Details" width="600"/>
 </p>
 
-Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`newstor.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
+Download the SSH key to the computer from which you want to authenticate on NeLS, note the host addresses (`login.nels.elixir.no` and `data.nels.elixir.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
 
 ## Transfer data to and from NeLS
 
@@ -49,35 +49,11 @@ For quick browsing and simple file access a user can log into NeLS at https://ne
 
 This access option is used when data needs to be backed up from NeLS to SBI, for details see section [Midterm data storage in NeLS and SBI](user-doc.html#midterm-data-storage-in-nels-and-sbi).
 
-Here is a screenshot of the Personal Area in the NeLS portal. The numbered blocks highlight the following features: [1] Upload File(s), Add New Folder; [2] File and folder manipulation; [3] Rename file or folder; [4] (De)select all/some items; [5] Projects Area - the same functionality available there as in the Personal Area.
+Here is a screenshot of the Personal Area in the NeLS portal. The numbered blocks highlight the following features: [1] Upload File(s), Add New Folder; [2] File and folder manipulation, Rename file or folder; [3] (De)select all/some items; [4] Projects Area - the same functionality available there as in the Personal Area.
 
 <p align="middle">
-<img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
+<img src="images/NeLS_personal_2026.png" width="800" alt="NeLS Personal Area" />
 </p>
-
-### Upload/Download using dedicated programs (FileZilla setup)
-
-Programs such as [FileZilla](https://filezilla-project.org/) and [WinSCP](https://winscp.net/eng/download.php) can be used to transfer data to and from NeLS. Connection to NeLS has to be properly set up inside the tool’s configuration options providing the host address, username, and the user's SSH key. Instructions on how to gather these pieces of information are written in section [Collect connection details from the NeLS portal](user-doc.html#collect-connection-details-from-the-nels-portal).
-
-When using FileZilla, select `File` from the top menu and open `Site Manager...`. Click on the `New Site` button and call the new site `NeLS`. Perform the following changes to the form:
-
-1. Change `Protocol` to `SFTP - SSH File Transfer Protocol`.
-
-2. Fill in `Host` from the NeLS Connection Details.
-
-3. Change `Logon Type` to `Key File`.
-
-4. Fill in `Username` from the NeLS Connection Details.
-
-5. Browse for the Key File, allow all file types to show in the pop-up window and select the SSH Key File downloaded from the NeLS portal.
-
-
-The Site Manager Form will at the end look similar to the screenshot below with [1], [2], and [3] highlighting the filled in connection details. Press the `Connect` button. When the connection to NeLS is successfully established, the content of the local computer is shown in the left-hand side window and the content of NeLS is shown in the right-hand side window. File copying can be done by dragging and dropping files which should be coppied. When connecting to NeLS via FileZilla next time, hover with your cursor over the left-most icon (servers) below the top menu and select `NeLS` connection when it shows up.
-
-<p align="middle">
-<img src="images/NeLS_FileZilla_site_manager_filled.png" width="600" alt="FileZilla site manager filled" />
-</p>
-
 
 
 ### Upload/Download via the command line using `scp`
