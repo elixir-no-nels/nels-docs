@@ -10,7 +10,7 @@ ELIXIR Norway provide service, infrastructure, support and training for life sci
 
 * The list of services can be found on our [Service page](https://elixir.no/services) in or main web site at [elixir.no](https://elixir.no)
 * We provide training events on the use of our services. These are can be found on our [Training page](https://elixir.no/training) and are also announced in [ELIXIR's Training Portal](https://tess.elixir-europe.org/) (TeSS)
-* We also provide a [national support desk](https://elixir.no/helpdesk) for all types of bioinformatics related questions.
+* We also provide a [national support desk](https://elixir.no/research-support/) for all types of bioinformatics related questions.
 
 !!! info
 
@@ -20,7 +20,7 @@ ELIXIR Norway provide service, infrastructure, support and training for life sci
 
 ![](images/nels-logo-300.png)
 
-The Norwegian e-Infrastructure for Life Sciences [(NeLS)](https://nels.bioinfo.no/nels-web/#/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
+The Norwegian e-Infrastructure for Life Sciences [(NeLS)](https://nels.elixir.no/) is a national portal for sharing, analysis and mid-term storage of non-sensitive molecular life science data developed and operated by [ELIXIR Norway](https://elixir.no/).
 
 StoreBioInfo (SBI) is for long term storage of project data. A storage quota in this layer is granted upon a successful application to [ELIXIR Norway support desk](mailto:support@elixir.no?subject=NeLS)
 
@@ -42,12 +42,12 @@ The architecture of NeLS has a tiered structure, with three natural layers that 
 NeLS is accessible to all Norwegian researchers and international research collaborators of their projects.
 
 #### What type of data can be stored in NeLS?
-NeLS is for storage of non-sensitive Life Science data. Please consult the [Terms Of Use](https://nels./pages/user-terms.xhtml).
+NeLS is for storage of non-sensitive Life Science data. Please consult the [Terms Of Use](https://nels.elixir.no/nels-web/#/tos).
 
 Sensitive data must be stored using other platforms that allows collection, storage and analysis of sensitive research data in a secure environment, such as [TSD](https://www.uio.no/english/services/it/research/sensitive-data/index.html) or the [HUNT Cloud](https://www.ntnu.edu/mh/huntcloud)" 
 
 #### How to obtain access to NeLS
-All users with FEIDE login credentials can access the NeLS Portal at [https://nels.bioinfo.no/nels-web/#/](https://nels.bioinfo.no/nels-web/#/). Only prerequisite is that your University/institution need to allow their users to use FEIDE to connect to the NeLS Portal. 
+All users with FEIDE login credentials can access the NeLS Portal at [https://nels.elixir.no](https://nels.elixir.no). Only prerequisite is that your University/institution need to allow their users to use FEIDE to connect to the NeLS Portal. 
 
 !!! tip
 
@@ -56,7 +56,7 @@ All users with FEIDE login credentials can access the NeLS Portal at [https://ne
 To access the NeLS portal, see [Accessing NeLS](user-doc.html#accessing_nels)
    
 #### I don't have FEIDE login credentials
-Ii is also possible to login to NeLS via a NeLS idp. You can apply for a NeLS idp [here](https://nels.bioinfo.no/idp/module.php/core/loginuserpass.php?AuthState=_e3c298768785fea6fb75e89e2c034c510d25590650%3Ahttps%3A%2F%2Fnels.bioinfo.no%2Fidp%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Durn%253Amace%253Afeide.no%253Aservices%253Ano.bioinfo.nels%26cookieTime%3D1615299111). 
+Ii is also possible to login to NeLS via a NeLS idp. You can apply for a NeLS idp [here](https://nels.elixir.no/nels-web/#/registrations). 
 
 !!! info
 
@@ -95,7 +95,7 @@ The StoreBioinfo storage layer is implemented on top of the national research da
 
 !!! note
 
-	A detailed description of the backup of the system can be found in the [NeLS Terms of reference](https://nels.bioinfo.no/pages/user-terms.xhtml)
+	A detailed description of the backup of the system can be found in the [NeLS Terms of reference](https://nels.elixir.no/nels-web/#/tos)
 
 ## About usegalaxy.no
 
@@ -104,7 +104,7 @@ The StoreBioinfo storage layer is implemented on top of the national research da
 
 You can read more about Galaxy in the [Galaxy Community Hub](https://galaxyproject.org/).
 
-[usegalaxy.no](https://usegalaxy.no/) is directly connected to your data storage in [NeLS](https://nels.bioinfo.no/). This exclude the need for local copy of your data. You can simply transfer data directly between [usegalaxy.no](https://usegalaxy.no/) and [NeLS](https://nels.bioinfo.no/).
+[usegalaxy.no](https://usegalaxy.no/) is directly connected to your data storage in [NeLS](https://nels.elixir.no/). This exclude the need for local copy of your data. You can simply transfer data directly between [usegalaxy.no](https://usegalaxy.no/) and [NeLS](https://nels.elixir.no/).
 
 #### Who can access usegalaxy.no
 If you have access to NeLS, you also have access to usegalaxy.no
@@ -118,7 +118,7 @@ If you have access to NeLS, you also have access to usegalaxy.no
 #### ELIXIR Norway Data Stewardship Wizard
 The Data Stewardship Wizard is an international project to help serious researchers and data stewards with building smart Data Management Plans (DMPs) for FAIR Open Science. 
 
-ELIXIR Norway offer a dedicated [Data Stewardship Wizard instance](https://elixir-no.ds-wizard.org/) for life scientists in Norway with tailored guidance. You can use you FEIDE user to log in (given that your [FEIDE user is linked to ELIXIR AAI](https://elixir-europe.org/register) or you can sign up using your email address.
+ELIXIR Norway offer a dedicated [Data Stewardship Wizard instance](https://norway.dsw.elixir-europe.org/) for life scientists in Norway with tailored guidance. You can use you FEIDE user to log in (given that your [FEIDE user is linked to LS Login](https://elixir-europe.org/register) or you can sign up using your email address.
 
 You can find more information on the Data Stewardship Wizard in the [DSW user guide](https://guide.ds-wizard.org/).
 
@@ -166,7 +166,12 @@ Please cite our [F1000Research publication on NeLS](https://doi.org/10.12688/f10
 #### Please also refer to us in your acknowledgement
 
 
-##### If the project was supported after April 2022 please add:
+##### If the project was supported  after April 2026 -  please add:
+
+“..............received [bioinformatic/data management/infrastructure] support from ELIXIR Norway, supported by the Research Council of Norway’s grant 350529, the University of Bergen, the University of Oslo, the Arctic University of Norway in Tromsø, the Norwegian University of Science and Technology and the Norwegian University of Life Sciences: NMBU”
+
+
+##### If the project was supported April 2022 - April 2026 please add:
 
 “..............received [bioinformatic/data management/infrastructure] support from ELIXIR Norway, supported by the Research Council of Norway’s grant 322392, the University of Bergen, the University of Oslo, the Arctic University of Norway in Tromsø, the Norwegian University of Science and Technology and the Norwegian University of Life Sciences: NMBU”
 
