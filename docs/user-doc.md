@@ -9,7 +9,7 @@
 ## Accessing NeLS
 There are two ways you can access data on NeLS:
 
-* Via the [NeLS portal](https://nels.bioinfo.no/) online GUI
+* Via the [NeLS portal](https://https://nels.elixir.no/) online GUI
 * Using `ssh` through command line
 
 ### Via the NeLS portal
