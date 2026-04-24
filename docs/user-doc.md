@@ -87,9 +87,7 @@ Here is a list of several examples of how to upload files and folders to NeLS us
 
 1. Upload a file into the `Personal` folder:
 
-		$ scp -i <SSH_key> \
-		>  <file> \
-		>  <username>@newstor.cbu.uib.no:/elixir-chr/nels/users/<username>/Personal
+		$ scp -i <SSH_key> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" file-to-send-to-nels <username>@data.nels.elixir.no:Personal/ 
 
 2. Upload a file into a project folder:
 
