@@ -2,7 +2,7 @@
 
 [ELIXIR Norway](https://elixir.no) provides services and training, to support Life Science researchers to efficiently and safely store, share, analyse and publish their data.
 
-Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.bioinfo.no/nels-web/#/).
+Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - NeLS](https://nels.elixir.no/).
 
 !!! warning
     This documentation is still under development
