@@ -52,7 +52,7 @@ This access option is used when data needs to be backed up from NeLS to SBI, for
 Here is a screenshot of the Personal Area in the NeLS portal. The numbered blocks highlight the following features: [1] Upload File(s), Add New Folder; [2] File and folder manipulation, Rename file or folder; [3] (De)select all/some items; [4] Projects Area - the same functionality available there as in the Personal Area.
 
 <p align="middle">
-<img src="images/NeLS_personal.png" width="800" alt="NeLS Personal Area" />
+<img src="images/NeLS_personal_2026.png" width="800" alt="NeLS Personal Area" />
 </p>
 
 
