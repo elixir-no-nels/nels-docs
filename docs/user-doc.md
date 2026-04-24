@@ -27,7 +27,7 @@ For quick browsing and simple file access you can log into [NeLS](https://nels.b
 
 After gathering your username and SSH key, you can use `ssh` to access NeLS with the following command (character `$` only indicates beginning of the line and is not a part of the command):
 
-	$ ssh -i <SSH_key> <username>@newstor.cbu.uib.no
+	$ ssh -i <SSH_key> -o IdentitiesOnly=yes -o "ProxyCommand ssh -i <SSH_key> -W %h:%p <username>@login.nels.elixir.no" <username>@data.nels.elixir.no 
 
 Absolute path to the home directory in NeLS is `/elixir-chr/nels/users/<username>`.
 
