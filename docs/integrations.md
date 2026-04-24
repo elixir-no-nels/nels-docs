@@ -1,5 +1,20 @@
 # Integrations
 
+## Data Stewardship Wizard
+
+NeLS project can be created from your DMP in the [Norwegian DSW-Instance](https://norway.dsw.elixir-europe.org).
+
+Information on how to write your DMP can be found in the plan.research-data.no [Quick start guide](https://plan.research-data.no/pages/support_00_start_writing)
+
+1. After you have written your DMP navigate to the `Documents` tab of your project.
+2. Click `New document`
+3. Choose provide a Name (e.g. 'intial version for NeLS import'),select `maDMP (RDA DMP Common Standard` under Document Template and `JSON` as format and press `Create
+4. Click on the dots to the right hand side in the overview and select 'Submit'
+5. Submit to NeLS
+
+You will receive an email when your request is approved by the ELIXIR-NO helpdesk and the NeLS project will be created according to the information about you and your contributors in your DMP.
+
+
 ## NeLS - SEEK integration
 NeLS can be integrated with [SEEK](https://seek4science.org/) to keep track of metadata.
 
