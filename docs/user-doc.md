@@ -33,10 +33,10 @@ Absolute path to the home directory in NeLS is `/nels/users/<username>`.
 
 ## Collect connection details from the NeLS portal 
 
-Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with programs like PuTTY and FileZilla) requires three specific pieces of information: host address [1], username [2] - it differs from FEiDE ID and Idp, and SSH private key associated with the username [3]. All the informations can be found in the Connection Details window of the NeLS portal. To open the window, navigate to the top right corner and select Connection Details form the menu. Screenshots of the menu and the window with highlighted connection details are shown below.
+Access to NeLS using `ssh`, `scp`, or `sftp` (be it via command line or with programs like PuTTY and FileZilla) requires four specific pieces of information: username [1] (it differs from FEiDE ID and Idp), Login host address [2], Data host address [3] and SSH private key associated with the username [4]. All the informations can be found in the My Profile page of the NeLS portal. Screenshots of the page with highlighted connection details are shown below.
 
 <p align="middle">
-<img src="images/NeLS_Access_2026.png" alt="NeLS Connection Details" width="600"/>
+<img src="images/nels_access.png" alt="NeLS Connection Details" width="600"/>
 </p>
 
 Download the SSH key to the computer from which you want to authenticate on NeLS, note the host address (`newstor.cbu.uib.no`) and your username. Modify access permissions for the SSH key in such a way that only you can read and write to the file and no other user can access the file. In the linux-based operating systems (including OsX), one can achieve this by typing `chmod 600 <SSH_key>` into a terminal window. In Windows, one can access the security tab in the `Properties` option of the `<SSH_key>` file and keep access granted only to oneself, `SYSTEM` and `Administrators`. 
