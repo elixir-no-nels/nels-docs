@@ -41,7 +41,8 @@ Our main infrastructure is the [Norwegian e-Infrastructure for Life Sciences - N
 
 ## Integrations
 
-* NeLS - SEEK integration
+* [Data Stewardship Wizard](integrations.html#data-stewardship-wizard)
+* [NeLS - SEEK integration](integrations.html#nels-seek-integration)
 <!--- * DSW integration -->
 
 <!--- ## API Documentation -->

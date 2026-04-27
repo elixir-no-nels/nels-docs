@@ -15,4 +15,4 @@ nav:
  - Home: 'index.md'
  - About: 'about.md'
  - User Documentation: 'user-doc.md'
- - NeLS - SEEK integration: 'integrations.md'
+ - Integrations: 'integrations.md'
