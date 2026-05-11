@@ -137,6 +137,10 @@ The RDMkit has guidelines, information, and pointers to help you with problems t
 
 	This part of the page is still under construction
 
+## Reporting Sigma2 storage usage 
+
+If you have used the NeLS and SBI infrastructure for data storage, please remember to report your project’s usage under the Sigma2 Project “NS9000K” as required by Sigma2 in the Norwegian Research Information Repository(NVA). Follow the [Sigma2 reporting guidelines and instructions for the Norwegian Research Information Repository (NVA)](https://www.sigma2.no/reporting-usage).
+
 
 ## How to cite us
 
