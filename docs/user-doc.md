@@ -114,7 +114,7 @@ Import the data to NeLS with:
 ### Create checksums to ensure file integrity 
 
 
-A simple way to detect file corruption during transfer or storage are [MD5 checksums](https://en.wikipedia.org/wiki/MD5). MD5 checksums are sufficient for detecting accidental corruption, for security related application please use more advanced algorithms such as SHA256 (these are also more compute intensive and slower)
+A simple way to detect file corruption during transfer or storage are [MD5 checksums](https://en.wikipedia.org/wiki/Md5sum). MD5 checksums are sufficient for detecting accidental corruption, for security related application please use more advanced algorithms such as SHA256 (these are also more compute intensive and slower)
 
 
 - Linux (multiple files in current dir)
