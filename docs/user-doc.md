@@ -111,12 +111,66 @@ Import the data to NeLS with:
 		$ wget -O tmp.zip "FILESENDER_ZIP_DOWNLOAD_LINK" && unzip tmp.zip && rm tmp.zip
 
 
+### Create checksums to ensure file integrity 
+
+
+A simple way to detect file corruption during transfer or storage are [MD5 checksums](https://en.wikipedia.org/wiki/MD5). MD5 checksums are sufficient for detecting accidental corruption, for security related application please use more advanced algorithms such as SHA256 (these are also more compute intensive and slower)
+
+
+- Linux (multiple files in current dir)
+```bash
+md5sum * > checksums.md5
+```
+
+- Linux (entire directory, recursive; paths relative)
+```bash
+cd /path/to/directory
+find . -type f -print0 | xargs -0 md5sum > checksums.md5
+```
+
+- macOS (recursive directory)
+```bash
+cd /path/to/directory
+find . -type f -print0 | xargs -0 md5 -r > checksums.md5
+# or install coreutils and use md5sum as on Linux
+```
+
+- Windows (PowerShell; recursive, outputs md5sum-compatible "CHECKSUM  relative\path")
+```powershell
+# run in the directory you want checksummed
+Get-ChildItem -Recurse -File | ForEach-Object {
+  $h = Get-FileHash -Algorithm MD5 -Path $_.FullName
+  "{0}  {1}" -f $h.Hash.ToLower(), ($_.FullName.Substring((Get-Location).Path.Length+1).Replace('\','/'))
+} | Out-File -Encoding ASCII checksums.md5
+```
+
+### Transfer files + checksum to NeLS (example using scp)
+
+- Upload a directory and the checksum file e.g. using [scp](#uploaddownload-via-the-command-line-using-scp)
+
+### Verify checksums on NeLS (after transfer)
+
+- Login via [ssh](#using-ssh-through-command-line) and change to the target directory on NeLS and run:
+```bash
+cd ~/Personal/dir   # or /nels/users/<username>/Personal/directory
+md5sum -c checksums.md5
+# expected output: ./filename.txt: OK   (or filename: OK)
+```
+
+- If you used relative paths with leading "./" (from find), md5sum -c will match them; if checksums use plain filenames ensure current directory matches the paths in checksums.md5.
+
+### Notes / troubleshooting (very brief)
+- Ensure the paths in checksums.md5 match locations on NeLS (use relative paths from the directory where you'll run md5sum -c).
+- If macOS produced a different format, recreate checksums with md5 -r or use md5sum-compatible output before transfer.
+
+
+
 ## Transfer data to and from SBI
 SBI is only connected to NeLS. Data has to reside in NeLS before it can be imported in SBI, and data in SBI can only be exported to NeLS. You need to be member of a SBI project before you can transfer data between NeLS and SBI 
 
 !!! note
 
-	The only way to transfer data between NeLS and SBI is through the NeLS Portal web GUI. Data
+	The only way to transfer data between NeLS and SBI is through the NeLS Portal web GUI.
 
 #### Importing data in SBI
 You will find all SBI projects you are a member of under the `StoreBioInfo` menu in the [NeLS Portal](https://nels.elixir.no/). You will see both your NeLS projects [1] (Personal and Projects) to the left of the screen and the SBI projects to the right [2].
